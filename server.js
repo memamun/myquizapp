@@ -134,9 +134,9 @@ app.get('*', (req, res) => {
 });
 
 // Update the port to use an environment variable or default to 3001
-const PORT = process.env.PORT || 3001;
+const port = process.env.PORT || 10000;
 
 // Update the listen method to use the PORT variable
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server running on port ${port}`);
 });
