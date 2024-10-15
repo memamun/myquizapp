@@ -1,0 +1,803 @@
+{
+  "quizzes": [
+    {
+      "title": "General Knowledge",
+      "questions": [
+        {
+          "question": "What is the capital of France?",
+          "options": [
+            "London",
+            "Berlin",
+            "Paris",
+            "Madrid"
+          ],
+          "correctAnswer": "Paris"
+        },
+        {
+          "question": "Who painted the Mona Lisa?",
+          "options": [
+            "Vincent van Gogh",
+            "Leonardo da Vinci",
+            "Pablo Picasso",
+            "Michelangelo"
+          ],
+          "correctAnswer": "Leonardo da Vinci"
+        },
+        {
+          "question": "What is the largest mammal in the world?",
+          "options": [
+            "African Elephant",
+            "Blue Whale",
+            "Giraffe",
+            "Hippopotamus"
+          ],
+          "correctAnswer": "Blue Whale"
+        },
+        {
+          "question": "Which programming language is this quiz app likely built with?",
+          "options": [
+            "Python",
+            "Java",
+            "JavaScript",
+            "C++"
+          ],
+          "correctAnswer": "JavaScript"
+        },
+        {
+          "question": "agsfjdklgjkfa",
+          "options": [
+            "s",
+            "sdsf",
+            "ss",
+            "sp"
+          ],
+          "correctAnswer": "sp"
+        }
+      ]
+    },
+    {
+      "title": "Science Quiz",
+      "questions": [
+        {
+          "question": "Which planet is known as the Red Planet?",
+          "options": [
+            "Mars",
+            "Venus",
+            "Jupiter",
+            "Saturn"
+          ],
+          "correctAnswer": "Mars"
+        },
+        {
+          "question": "What is the chemical symbol for water?",
+          "options": [
+            "H2O",
+            "O2",
+            "CO2",
+            "NaCl"
+          ],
+          "correctAnswer": "H2O"
+        },
+        {
+          "question": "What is the powerhouse of the cell?",
+          "options": [
+            "Nucleus",
+            "Ribosome",
+            "Mitochondria",
+            "Endoplasmic Reticulum"
+          ],
+          "correctAnswer": "Mitochondria"
+        },
+        {
+          "question": "What gas do plants absorb from the atmosphere?",
+          "options": [
+            "Oxygen",
+            "Carbon Dioxide",
+            "Nitrogen",
+            "Hydrogen"
+          ],
+          "correctAnswer": "Carbon Dioxide"
+        },
+        {
+          "question": "What is the process by which plants make their food?",
+          "options": [
+            "Photosynthesis",
+            "Respiration",
+            "Transpiration",
+            "Digestion"
+          ],
+          "correctAnswer": "Photosynthesis"
+        },
+        {
+          "question": "What is the most abundant gas in the Earth's atmosphere?",
+          "options": [
+            "Oxygen",
+            "Carbon Dioxide",
+            "Nitrogen",
+            "Argon"
+          ],
+          "correctAnswer": "Nitrogen"
+        },
+        {
+          "question": "The color of the sky is?",
+          "options": [
+            "Red",
+            "Green",
+            "Blue",
+            "Pink"
+          ],
+          "correctAnswer": "Blue"
+        }
+      ]
+    },
+    {
+      "title": "History Quiz",
+      "questions": [
+        {
+          "question": "Who was the first President of the United States?",
+          "options": [
+            "George Washington",
+            "Thomas Jefferson",
+            "Abraham Lincoln",
+            "John Adams"
+          ],
+          "correctAnswer": "George Washington"
+        },
+        {
+          "question": "What year did World War II end?",
+          "options": [
+            "1945",
+            "1944",
+            "1939",
+            "1950"
+          ],
+          "correctAnswer": "1945"
+        },
+        {
+          "question": "Which ancient civilization built the pyramids?",
+          "options": [
+            "Romans",
+            "Greeks",
+            "Egyptians",
+            "Mayans"
+          ],
+          "correctAnswer": "Egyptians"
+        }
+      ]
+    },
+    {
+      "title": "Geography Quiz",
+      "questions": [
+        {
+          "question": "What is the largest continent?",
+          "options": [
+            "Africa",
+            "Asia",
+            "North America",
+            "Antarctica"
+          ],
+          "correctAnswer": "Asia"
+        },
+        {
+          "question": "Which river is the longest in the world?",
+          "options": [
+            "Amazon",
+            "Nile",
+            "Yangtze",
+            "Mississippi"
+          ],
+          "correctAnswer": "Nile"
+        },
+        {
+          "question": "What is the capital city of Japan?",
+          "options": [
+            "Seoul",
+            "Beijing",
+            "Tokyo",
+            "Bangkok"
+          ],
+          "correctAnswer": "Tokyo"
+        }
+      ]
+    },
+    {
+      "title": "Literature Quiz",
+      "questions": [
+        {
+          "question": "Who wrote 'Romeo and Juliet'?",
+          "options": [
+            "Charles Dickens",
+            "William Shakespeare",
+            "Mark Twain",
+            "Jane Austen"
+          ],
+          "correctAnswer": "William Shakespeare"
+        },
+        {
+          "question": "What is the name of the wizarding school in Harry Potter?",
+          "options": [
+            "Hogwarts",
+            "Beauxbatons",
+            "Durmstrang",
+            "Ilvermorny"
+          ],
+          "correctAnswer": "Hogwarts"
+        },
+        {
+          "question": "Who is the author of '1984'?",
+          "options": [
+            "George Orwell",
+            "Aldous Huxley",
+            "F. Scott Fitzgerald",
+            "Ernest Hemingway"
+          ],
+          "correctAnswer": "George Orwell"
+        }
+      ]
+    },
+    {
+      "title": "Programming",
+      "questions": [
+        {
+          "question": "Which of the following is NOT a fundamental data type in most programming languages?",
+          "options": [
+            "Integer",
+            "String",
+            "Boolean",
+            "Array"
+          ],
+          "correctAnswer": "Array"
+        },
+        {
+          "question": "What is the primary purpose of a loop in programming?",
+          "options": [
+            "To declare variables",
+            "To execute a block of code multiple times",
+            "To define functions",
+            "To handle errors"
+          ],
+          "correctAnswer": "To execute a block of code multiple times"
+        },
+        {
+          "question": "What is the difference between a 'for' loop and a 'while' loop?",
+          "options": [
+            "'for' loops are faster than 'while' loops",
+            "'while' loops are used for iteration, 'for' loops are used for selection",
+            "'for' loops iterate a fixed number of times, 'while' loops continue until a condition is met",
+            "'for' loops are used in object-oriented programming, 'while' loops are used in procedural programming"
+          ],
+          "correctAnswer": "'for' loops iterate a fixed number of times, 'while' loops continue until a condition is met"
+        }
+      ]
+    },
+    {
+      "title": "বাংলাদেশের সংবিধান",
+      "questions": [
+        {
+          "question": "বাংলাদেশের সংবিধান কবে গৃহীত হয়?",
+          "options": [
+            "৪ নভেম্বর, ১৯৭১",
+            "১৬ ডিসেম্বর, ১৯৭১",
+            "৪ নভেম্বর, ১৯৭২",
+            "১৬ ডিসেম্বর, ১৯৭২"
+          ],
+          "correctAnswer": "৪ নভেম্বর, ১৯৭২"
+        },
+        {
+          "question": "বাংলাদেশের সংবিধানে কতটি অনুচ্ছেদ রয়েছে?",
+          "options": [
+            "১৫৬",
+            "১৫৩",
+            "১৬০",
+            "১৫০"
+          ],
+          "correctAnswer": "১৫৩"
+        },
+        {
+          "question": "বাংলাদেশের সংবিধানের প্রথম ধারা কি?",
+          "options": [
+            "রাষ্ট্রের নাম",
+            "রাষ্ট্রের ভাষা",
+            "রাষ্ট্রের ধর্ম",
+            "রাষ্ট্রের আদর্শ"
+          ],
+          "correctAnswer": "রাষ্ট্রের নাম"
+        },
+        {
+          "question": "বাংলাদেশের সংবিধানের দ্বিতীয় ধারা কি?",
+          "options": [
+            "রাষ্ট্রের ভাষা",
+            "রাষ্ট্রের ধর্ম",
+            "রাষ্ট্রের আদর্শ",
+            "রাষ্ট্রের অঞ্চল"
+          ],
+          "correctAnswer": "রাষ্ট্রের ভাষা"
+        },
+        {
+          "question": "বাংলাদেশের সংবিধান অনুসারে রাষ্ট্রের ধর্ম কি?",
+          "options": [
+            "ইসলাম",
+            "হিন্দু",
+            "বৌদ্ধ",
+            "খ্রিস্টান"
+          ],
+          "correctAnswer": "ইসলাম"
+        },
+        {
+          "question": "বাংলাদেশের সংবিধান অনুসারে রাষ্ট্রের আদর্শ কি?",
+          "options": [
+            "সাম্য",
+            "ন্যায়",
+            "মানবতা",
+            "সকল"
+          ],
+          "correctAnswer": "সকল"
+        },
+        {
+          "question": "বাংলাদেশের সংবিধানে কতটি মৌলিক অধিকার নিশ্চিত করা হয়েছে?",
+          "options": [
+            "৩৫",
+            "৩৮",
+            "৪০",
+            "৪২"
+          ],
+          "correctAnswer": "৩৫"
+        },
+        {
+          "question": "বাংলাদেশের সংবিধানে  কোনটি রাষ্ট্রের ভাষা?",
+          "options": [
+            "বাংলা",
+            "ইংরেজি",
+            "আরবি",
+            "হিন্দি"
+          ],
+          "correctAnswer": "বাংলা"
+        },
+        {
+          "question": "বাংলাদেশের সংবিধান অনুসারে রাষ্ট্রের প্রধান কে?",
+          "options": [
+            "প্রধানমন্ত্রী",
+            "রাষ্ট্রপতি",
+            "মুখ্য বিচারপতি",
+            "স্পিকার"
+          ],
+          "correctAnswer": "প্রধানমন্ত্রী"
+        },
+        {
+          "question": "বাংলাদেশের সংবিধানে কতটি শাখা রয়েছে?",
+          "options": [
+            "২",
+            "৩",
+            "৪",
+            "৫"
+          ],
+          "correctAnswer": "৩"
+        }
+      ]
+    },
+    {
+      "title": "এশিয়া মহাদেশ",
+      "questions": [
+        {
+          "question": "কোন দেশটি এশিয়ার সবচেয়ে বড় দেশ?",
+          "options": [
+            "চীন",
+            "ভারত",
+            "রাশিয়া",
+            "ইন্দোনেশিয়া"
+          ],
+          "correctAnswer": "চীন"
+        },
+        {
+          "question": "এশিয়ার কোন পর্বতমালা বিশ্বের সর্বোচ্চ?",
+          "options": [
+            "হিমালয়",
+            "আল্পস",
+            "রকি",
+            "আন্দেস"
+          ],
+          "correctAnswer": "হিমালয়"
+        },
+        {
+          "question": "কোন নদী এশিয়ার সবচেয়ে বড় নদী?",
+          "options": [
+            "গঙ্গা",
+            "যমুনা",
+            "ব্রহ্মপুত্র",
+            "ইয়াংসিকিয়াং"
+          ],
+          "correctAnswer": "ইয়াংসিকিয়াং"
+        },
+        {
+          "question": "এশিয়ার কোন দেশটি বিশ্বের জনসংখ্যার দিক থেকে সবচেয়ে বড়?",
+          "options": [
+            "চীন",
+            "ভারত",
+            "ইন্দোনেশিয়া",
+            "পাকিস্তান"
+          ],
+          "correctAnswer": "চীন"
+        },
+        {
+          "question": "কোন শহরটি এশিয়ার সবচেয়ে বড় শহর?",
+          "options": [
+            "টোকিও",
+            "শাংহাই",
+            "দিল্লি",
+            "বেইজিং"
+          ],
+          "correctAnswer": "টোকিও"
+        },
+        {
+          "question": "কোন ধর্মটি এশিয়ার সবচেয়ে বড় ধর্ম?",
+          "options": [
+            "হিন্দু",
+            "ইসলাম",
+            "খ্রিস্টধর্ম",
+            "বৌদ্ধ"
+          ],
+          "correctAnswer": "হিন্দু"
+        },
+        {
+          "question": "কোন দেশটি এশিয়ার প্রথম স্থানে রয়েছে যা দক্ষিণ কোরিয়ার সাথে সীমানা ভাগ করে?",
+          "options": [
+            "চীন",
+            "জাপান",
+            "রাশিয়া",
+            "উত্তর কোরিয়া"
+          ],
+          "correctAnswer": "উত্তর কোরিয়া"
+        },
+        {
+          "question": "এশিয়ার কোন দেশটিতে কাশ্মীর অবস্থিত?",
+          "options": [
+            "ভারত",
+            "পাকিস্তান",
+            "চীন",
+            "উপরোক্ত সব"
+          ],
+          "correctAnswer": "উপরোক্ত সব"
+        },
+        {
+          "question": "এশিয়ার কোন দেশটি বিশ্বের সবচেয়ে বড় মরুভূমি থাকার জন্য বিখ্যাত?",
+          "options": [
+            "ইরাক",
+            "সৌদি আরব",
+            "মঙ্গোলিয়া",
+            "অস্ট্রেলিয়া"
+          ],
+          "correctAnswer": "সৌদি আরব"
+        },
+        {
+          "question": "কোন দেশটি এশিয়ার সবচেয়ে বড় তেল উৎপাদক?",
+          "options": [
+            "সৌদি আরব",
+            "ইরাক",
+            "ইরান",
+            "কুয়েত"
+          ],
+          "correctAnswer": "সৌদি আরব"
+        }
+      ]
+    },
+    {
+      "title": "আফ্রিকা মহাদেশ",
+      "questions": [
+        {
+          "question": "আফ্রিকা মহাদেশের কোন দেশটি বিশ্বের সবচেয়ে বড় জনসংখ্যার দেশ?",
+          "options": [
+            "নাইজেরিয়া",
+            "ইথিওপিয়া",
+            "ইজিপ্ত",
+            "দক্ষিণ আফ্রিকা"
+          ],
+          "correctAnswer": "নাইজেরিয়া"
+        },
+        {
+          "question": "আফ্রিকা মহাদেশের কোন নদীকে 'নীল নদ' বলা হয়?",
+          "options": [
+            "নাইল",
+            "কঙ্গো",
+            "নাইজার",
+            "জাম্বেজি"
+          ],
+          "correctAnswer": "নাইল"
+        },
+        {
+          "question": "কোন আফ্রিকান দেশটি 'সাহারা মরুভূমি'র অংশ?",
+          "options": [
+            "ইজিপ্ত",
+            "নাইজেরিয়া",
+            "দক্ষিণ আফ্রিকা",
+            "কেনিয়া"
+          ],
+          "correctAnswer": "ইজিপ্ত"
+        },
+        {
+          "question": "কোন আফ্রিকান দেশটি 'ভিক্টোরিয়া জলপ্রপাত' এর জন্য বিখ্যাত?",
+          "options": [
+            "জাম্বিয়া",
+            "বোতসওয়ানা",
+            "জিম্বাবুয়ে",
+            "নামিবিয়া"
+          ],
+          "correctAnswer": "জাম্বিয়া"
+        },
+        {
+          "question": "আফ্রিকা মহাদেশের কোন দেশটি 'বিশ্বের সবচেয়ে বড়' হীরার খনি আছে?",
+          "options": [
+            "বোতসওয়ানা",
+            "দক্ষিণ আফ্রিকা",
+            "জাম্বিয়া",
+            "অ্যাঙ্গোলা"
+          ],
+          "correctAnswer": "বোতসওয়ানা"
+        },
+        {
+          "question": "কোন আফ্রিকান দেশটি 'বিশ্বের সবচেয়ে বড়' চা বাগান রয়েছে?",
+          "options": [
+            "কেনিয়া",
+            "তানজানিয়া",
+            "মলাউই",
+            "উগান্ডা"
+          ],
+          "correctAnswer": "কেনিয়া"
+        },
+        {
+          "question": "আফ্রিকা মহাদেশের কোন দেশটি 'বিশ্বের সবচেয়ে বড়' সোনার খনি আছে?",
+          "options": [
+            "গানা",
+            "দক্ষিণ আফ্রিকা",
+            "মালি",
+            "বুর্কিনা ফাসো"
+          ],
+          "correctAnswer": "দক্ষিণ আফ্রিকা"
+        },
+        {
+          "question": "কোন আফ্রিকান দেশটি 'বিশ্বের সবচেয়ে বড়' কফির উৎপাদক?",
+          "options": [
+            "ইথিওপিয়া",
+            "কেনিয়া",
+            "উগান্ডা",
+            "তানজানিয়া"
+          ],
+          "correctAnswer": "ইথিওপিয়া"
+        },
+        {
+          "question": "আফ্রিকা মহাদেশের কোন দেশটি 'বিশ্বের সবচেয়ে বড়' পেট্রোলিয়াম উৎপাদক?",
+          "options": [
+            "নাইজেরিয়া",
+            "লিবিয়া",
+            "আলজেরিয়া",
+            "অ্যাঙ্গোলা"
+          ],
+          "correctAnswer": "নাইজেরিয়া"
+        },
+        {
+          "question": "কোন আফ্রিকান দেশটি 'বিশ্বের সবচেয়ে বড়' জীববৈচিত্র্যের অঞ্চল?",
+          "options": [
+            "কঙ্গো প্রজাতন্ত্র",
+            "মাদাগাস্কার",
+            "তানজানিয়া",
+            "দক্ষিণ আফ্রিকা"
+          ],
+          "correctAnswer": "মাদাগাস্কার"
+        }
+      ]
+    },
+    {
+      "title": "ইউরোপ মহাদেশ",
+      "questions": [
+        {
+          "question": "ইউরোপের সবচেয়ে বড় দেশ কোনটি?",
+          "options": [
+            "জার্মানি",
+            "রাশিয়া",
+            "ফ্রান্স",
+            "ইউক্রেন"
+          ],
+          "correctAnswer": "রাশিয়া"
+        },
+        {
+          "question": "ইউরোপের সবচেয়ে ছোট দেশ কোনটি?",
+          "options": [
+            "ভ্যাটিকান সিটি",
+            "মোনাকো",
+            "সান মারিনো",
+            "লিচটেনস্টাইন"
+          ],
+          "correctAnswer": "ভ্যাটিকান সিটি"
+        },
+        {
+          "question": "ইউরোপের সর্বোচ্চ পর্বত শৃঙ্গ কোনটি?",
+          "options": [
+            "মন্ট ব্লাঁক",
+            "মন্টে রোসা",
+            "মন্ট সিসিলিয়া",
+            "মন্ট কারমেল"
+          ],
+          "correctAnswer": "মন্ট ব্লাঁক"
+        },
+        {
+          "question": "ইউরোপের কোন নদীকে 'ব্লু ড্যানিউব' বলা হয়?",
+          "options": [
+            "ড্যানিউব নদী",
+            "রাইন নদী",
+            "ভোল্গা নদী",
+            "এলব নদী"
+          ],
+          "correctAnswer": "ড্যানিউব নদী"
+        },
+        {
+          "question": "ইউরোপের কোন শহরকে 'বিশ্বের রাজধানী' বলা হয়?",
+          "options": [
+            "লন্ডন",
+            "প্যারিস",
+            "রোম",
+            "বার্লিন"
+          ],
+          "correctAnswer": "রোম"
+        },
+        {
+          "question": "ইউরোপের কোন দেশে বিখ্যাত 'টower of Pisa' অবস্থিত?",
+          "options": [
+            "ইতালি",
+            "ফ্রান্স",
+            "স্পেন",
+            "গ্রিস"
+          ],
+          "correctAnswer": "ইতালি"
+        },
+        {
+          "question": "ইউরোপের কোন দেশে 'কোলোসিয়াম' অবস্থিত?",
+          "options": [
+            "ইতালি",
+            "গ্রিস",
+            "স্পেন",
+            "ফ্রান্স"
+          ],
+          "correctAnswer": "ইতালি"
+        },
+        {
+          "question": "ইউরোপের কোন দেশে বিখ্যাত 'অ্যাক্রোপলিস' অবস্থিত?",
+          "options": [
+            "গ্রিস",
+            "ইতালি",
+            "স্পেন",
+            "ফ্রান্স"
+          ],
+          "correctAnswer": "গ্রিস"
+        },
+        {
+          "question": "ইউরোপের কোন দেশে 'ব্র্যান্ডেনবার্গ গেট' অবস্থিত?",
+          "options": [
+            "জার্মানি",
+            "ফ্রান্স",
+            "রাশিয়া",
+            "ইউক্রেন"
+          ],
+          "correctAnswer": "জার্মানি"
+        },
+        {
+          "question": "ইউরোপের কোন দেশে 'বাকিংহাম প্যালেস' অবস্থিত?",
+          "options": [
+            "ইংল্যান্ড",
+            "স্কটল্যান্ড",
+            "ওয়েলস",
+            "আয়ারল্যান্ড"
+          ],
+          "correctAnswer": "ইংল্যান্ড"
+        }
+      ]
+    },
+    {
+      "title": "উত্তর আমেরিকা",
+      "questions": []
+    },
+    {
+      "title": "Computer",
+      "questions": [
+        {
+          "question": "What does CPU stand for?",
+          "options": [
+            "Central Processing Unit",
+            "Computer Processing Unit",
+            "Control Processing Unit",
+            "Central Program Unit"
+          ],
+          "correctAnswer": "Central Processing Unit"
+        },
+        {
+          "question": "Which of these is NOT a type of computer memory?",
+          "options": [
+            "RAM",
+            "ROM",
+            "GPU",
+            "Cache"
+          ],
+          "correctAnswer": "GPU"
+        },
+        {
+          "question": "What is the primary function of an operating system?",
+          "options": [
+            "Running applications",
+            "Managing hardware resources",
+            "Providing a user interface",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "Which of these is a popular programming language?",
+          "options": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "All of the above"
+          ],
+          "correctAnswer": "JavaScript"
+        },
+        {
+          "question": "What is the purpose of a firewall?",
+          "options": [
+            "Protecting a network from unauthorized access",
+            "Filtering incoming and outgoing data",
+            "Preventing malware infections",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "What does the acronym 'URL' stand for?",
+          "options": [
+            "Universal Resource Locator",
+            "Uniform Resource Locator",
+            "Unique Resource Locator",
+            "Unified Resource Locator"
+          ],
+          "correctAnswer": "Uniform Resource Locator"
+        },
+        {
+          "question": "Which of these is a common file format for images?",
+          "options": [
+            "JPEG",
+            "PNG",
+            "GIF",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "What is the main function of a modem?",
+          "options": [
+            "Converting digital signals to analog signals",
+            "Connecting to the internet",
+            "Sending and receiving data over a phone line",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "What is the term for a network of computers that are connected within a small area?",
+          "options": [
+            "LAN",
+            "WAN",
+            "MAN",
+            "Internet"
+          ],
+          "correctAnswer": "LAN"
+        },
+        {
+          "question": "Which of these is a type of malware?",
+          "options": [
+            "Virus",
+            "Worm",
+            "Trojan Horse",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        }
+      ]
+    }
+  ]
+}

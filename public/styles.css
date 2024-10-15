@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#app-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#test-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#timer {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+#question-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#options-container {
+    display: grid;
+    gap: 10px;
+}
+
+#options-container button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+#options-container button:hover {
+    background-color: #e1e1e1;
+}
+
+#options-container button.selected {
+    background-color: #2196F3;
+    color: white;
+}
+
+#result, #score, #final-score {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#answer-sheet {
+    margin-top: 2rem;
+}
+
+.question-review {
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.question-review h3 {
+    margin-top: 0;
+}
+
+.option {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+.user-answer {
+    background-color: #ffcccb;
+}
+
+.correct-answer {
+    background-color: #90EE90;
+}
+
+.other-option {
+    background-color: #f1f1f1;
+}
