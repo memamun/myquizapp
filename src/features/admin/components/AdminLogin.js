@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import { useAuth } from '../../../hooks/useAuth';  // Updated import path
 
 function AdminLogin() {
   useEffect(() => {
@@ -9,14 +10,20 @@ function AdminLogin() {
   console.log('AdminLogin component rendered');
   const [password, setPassword] = useState('');
   const history = useHistory();
+  const { login, isLoggedIn } = useAuth();
+
+  console.log('Current login status:', isLoggedIn);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // This is a very basic check. In a real application, you'd want to use proper authentication.
+    console.log('Login attempted with password:', password);
     if (password === 'admin123') {
-      localStorage.setItem('isAdminLoggedIn', 'true');
+      console.log('Password correct, logging in');
+      login();
+      console.log('Redirecting to dashboard');
       history.push('/admin/dashboard');
     } else {
+      console.log('Incorrect password');
       alert('Incorrect password');
     }
   };

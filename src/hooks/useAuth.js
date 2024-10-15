@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 
 export function useAuth() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    return localStorage.getItem('isAdminLoggedIn') === 'true';
+  });
 
   useEffect(() => {
     const checkLoginStatus = () => {
@@ -9,9 +11,7 @@ export function useAuth() {
       setIsLoggedIn(status);
     };
 
-    checkLoginStatus();
     window.addEventListener('storage', checkLoginStatus);
-
     return () => {
       window.removeEventListener('storage', checkLoginStatus);
     };

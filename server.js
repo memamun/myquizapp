@@ -76,6 +76,29 @@ app.post('/api/add-question', async (req, res) => {
   }
 });
 
+app.post('/api/add-questions', async (req, res) => {
+  const { quizTitle, questions } = req.body;
+
+  try {
+    const quizzesPath = path.join(__dirname, 'public', 'quizzes.json');
+    const data = await fs.readFile(quizzesPath, 'utf8');
+    const quizzes = JSON.parse(data).quizzes;
+    
+    const quizIndex = quizzes.findIndex(q => q.title === quizTitle);
+    if (quizIndex === -1) {
+      quizzes.push({ title: quizTitle, questions: questions });
+    } else {
+      quizzes[quizIndex].questions = [...quizzes[quizIndex].questions, ...questions];
+    }
+    
+    await fs.writeFile(quizzesPath, JSON.stringify({ quizzes }, null, 2));
+    res.json({ success: true, message: 'Questions added successfully' });
+  } catch (error) {
+    console.error('Error adding questions:', error);
+    res.status(500).json({ success: false, message: 'Error adding questions' });
+  }
+});
+
 app.get('/quizzes.json', (req, res) => {
   const quizzesPath = path.join(__dirname, 'public', 'quizzes.json');
   fs.readFile(quizzesPath, 'utf8', (err, data) => {
@@ -129,6 +152,78 @@ app.post('/api/generate-questions', async (req, res) => {
   } catch (error) {
     console.error('Error in /api/generate-questions:', error);
     res.status(500).json({ success: false, message: 'Error generating questions: ' + error.message });
+  }
+});
+
+// Delete a question from a quiz
+app.delete('/api/delete-question', async (req, res) => {
+  const { quizTitle, questionIndex } = req.body;
+  const quizzesPath = path.join(__dirname, 'public', 'quizzes.json');
+
+  try {
+    const data = await fs.readFile(quizzesPath, 'utf8');
+    const quizzes = JSON.parse(data).quizzes;
+    
+    const quizIndex = quizzes.findIndex(q => q.title === quizTitle);
+    if (quizIndex === -1) {
+      return res.status(404).json({ success: false, message: 'Quiz not found' });
+    }
+
+    quizzes[quizIndex].questions.splice(questionIndex, 1);
+    
+    await fs.writeFile(quizzesPath, JSON.stringify({ quizzes }, null, 2));
+    res.json({ success: true, message: 'Question deleted successfully' });
+  } catch (error) {
+    console.error('Error deleting question:', error);
+    res.status(500).json({ success: false, message: 'Error deleting question' });
+  }
+});
+
+// Delete an entire quiz
+app.delete('/api/delete-quiz', async (req, res) => {
+  const { quizTitle } = req.body;
+  const quizzesPath = path.join(__dirname, 'public', 'quizzes.json');
+
+  try {
+    const data = await fs.readFile(quizzesPath, 'utf8');
+    let quizzes = JSON.parse(data).quizzes;
+    
+    quizzes = quizzes.filter(q => q.title !== quizTitle);
+    
+    await fs.writeFile(quizzesPath, JSON.stringify({ quizzes }, null, 2));
+    res.json({ success: true, message: 'Quiz deleted successfully' });
+  } catch (error) {
+    console.error('Error deleting quiz:', error);
+    res.status(500).json({ success: false, message: 'Error deleting quiz' });
+  }
+});
+
+// Update a question in a quiz
+app.put('/api/update-question', async (req, res) => {
+  const { quizTitle, oldQuestion, newQuestion } = req.body;
+  const quizzesPath = path.join(__dirname, 'public', 'quizzes.json');
+
+  try {
+    const data = await fs.readFile(quizzesPath, 'utf8');
+    const quizzes = JSON.parse(data).quizzes;
+    
+    const quizIndex = quizzes.findIndex(q => q.title === quizTitle);
+    if (quizIndex === -1) {
+      return res.status(404).json({ success: false, message: 'Quiz not found' });
+    }
+
+    const questionIndex = quizzes[quizIndex].questions.findIndex(q => q.question === oldQuestion.question);
+    if (questionIndex === -1) {
+      return res.status(404).json({ success: false, message: 'Question not found' });
+    }
+
+    quizzes[quizIndex].questions[questionIndex] = newQuestion;
+    
+    await fs.writeFile(quizzesPath, JSON.stringify({ quizzes }, null, 2));
+    res.json({ success: true, message: 'Question updated successfully' });
+  } catch (error) {
+    console.error('Error updating question:', error);
+    res.status(500).json({ success: false, message: 'Error updating question' });
   }
 });
 

@@ -1,244 +1,378 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import { useAuth } from '../../../hooks/useAuth';
 import './AdminDashboard.css';
 
 function AdminDashboard() {
-  const [quizTitles, setQuizTitles] = useState([]);
+  const [quizzes, setQuizzes] = useState([]);
+  const [activeSection, setActiveSection] = useState('dashboard');
   const [selectedQuiz, setSelectedQuiz] = useState(null);
-  const [newQuestion, setNewQuestion] = useState({
-    question: '',
-    options: ['', '', '', ''],
-    correctAnswer: ''
+  const [editingQuestion, setEditingQuestion] = useState(null);
+  const [newQuestion, setNewQuestion] = useState({ 
+    topic: '',
+    question: '', 
+    options: ['', '', '', ''], 
+    correctAnswer: '' 
   });
+  const [jsonInput, setJsonInput] = useState('');
   const [aiTopic, setAiTopic] = useState('');
   const [aiQuestionCount, setAiQuestionCount] = useState(1);
+  const [isAddingQuestion, setIsAddingQuestion] = useState(false);
   const history = useHistory();
+  const { logout } = useAuth();
 
   useEffect(() => {
-    fetchQuizTitles();
-    const hideHomePage = () => {
-      const homePage = document.getElementById('homepageP') || document.getElementById('home-page');
-      if (homePage) {
-        homePage.style.display = 'none';
-      }
-    };
-
-    hideHomePage();
-    // Run the function again after a short delay to catch any dynamically added elements
-    const timeoutId = setTimeout(hideHomePage, 100);
-
-    return () => clearTimeout(timeoutId);
+    console.log('AdminDashboard mounted');
+    fetchQuizzes();
   }, []);
 
-  const fetchQuizTitles = async () => {
+  const fetchQuizzes = async () => {
     try {
-      const response = await fetch('/api/quiz-titles');
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+      const response = await fetch('/quizzes.json');
       const data = await response.json();
-      if (Array.isArray(data.titles)) {
-        setQuizTitles(data.titles);
-      } else {
-        throw new Error('Invalid data structure for quiz titles');
-      }
+      setQuizzes(data.quizzes);
     } catch (error) {
-      console.error('Error fetching quiz titles:', error);
-      // Don't use alert here, it might be causing issues
-      console.log(`Failed to fetch quiz titles. Error: ${error.message}`);
+      console.error('Error fetching quizzes:', error);
     }
   };
 
-  const handleQuizSelect = async (title) => {
-    try {
-      const response = await fetch(`/api/quiz/${encodeURIComponent(title)}`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const quiz = await response.json();
-      setSelectedQuiz(quiz);
-    } catch (error) {
-      console.error('Error fetching quiz:', error);
-      alert(`Failed to fetch quiz. Error: ${error.message}`);
-    }
+  const handleLogout = () => {
+    logout();
+    history.push('/admin/login');
   };
 
-  const handleQuestionChange = (e) => {
-    setNewQuestion({ ...newQuestion, question: e.target.value });
+  const handleEditQuestion = (question) => {
+    setEditingQuestion(question);
+    setNewQuestion(question);
+    setIsAddingQuestion(true);
   };
 
-  const handleOptionChange = (index, value) => {
-    const updatedOptions = [...newQuestion.options];
-    updatedOptions[index] = value;
-    setNewQuestion({ ...newQuestion, options: updatedOptions });
-  };
-
-  const handleCorrectAnswerChange = (e) => {
-    setNewQuestion({ ...newQuestion, correctAnswer: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!selectedQuiz || !newQuestion.question || newQuestion.options.some(option => !option) || !newQuestion.correctAnswer) {
-      alert('Please fill in all fields');
-      return;
-    }
-    
-    try {
-      const response = await fetch('/api/add-question', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          quizTitle: selectedQuiz.title,
-          newQuestion: newQuestion
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to add question');
-      }
-
-      const data = await response.json();
-      if (data.success) {
-        alert('Question added successfully!');
-        setNewQuestion({
-          question: '',
-          options: ['', '', '', ''],
-          correctAnswer: ''
+  const handleDeleteQuestion = async (quizTitle, questionIndex) => {
+    if (window.confirm('Are you sure you want to delete this question?')) {
+      try {
+        const response = await fetch('/api/delete-question', {
+          method: 'DELETE',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ quizTitle, questionIndex }),
         });
-        await fetchQuizTitles(); // Refresh the quiz titles
-        await handleQuizSelect(selectedQuiz.title); // Refresh the selected quiz
-      } else {
-        alert('Failed to add question: ' + data.message);
+        if (response.ok) {
+          await fetchQuizzes();
+          const updatedQuiz = quizzes.find(q => q.title === quizTitle);
+          setSelectedQuiz(updatedQuiz);
+        } else {
+          alert('Failed to delete question');
+        }
+      } catch (error) {
+        console.error('Error deleting question:', error);
       }
-    } catch (error) {
-      console.error('Error adding question:', error);
-      alert(`An error occurred while adding the question: ${error.message}`);
     }
   };
 
-  const handleAiGenerate = async (e) => {
-    e.preventDefault();
-    if (!aiTopic || isNaN(aiQuestionCount) || aiQuestionCount < 1) {
-      alert('Please enter a valid topic and number of questions');
-      return;
+  const handleAddQuestion = async (method) => {
+    let questionData;
+    let quizTitle;
+
+    switch (method) {
+      case 'manual':
+        questionData = [{
+          question: newQuestion.question,
+          options: newQuestion.options,
+          correctAnswer: newQuestion.correctAnswer
+        }];
+        quizTitle = selectedQuiz ? selectedQuiz.title : newQuestion.topic;
+        break;
+      case 'json':
+        try {
+          const parsedData = JSON.parse(jsonInput);
+          if (!parsedData.title || !Array.isArray(parsedData.questions)) {
+            throw new Error('Invalid JSON format');
+          }
+          questionData = parsedData.questions;
+          quizTitle = parsedData.title;
+        } catch (error) {
+          alert('Invalid JSON format');
+          return;
+        }
+        break;
+      case 'ai':
+        if (!aiTopic || aiQuestionCount < 1) {
+          alert('Please enter a valid topic and number of questions');
+          return;
+        }
+        try {
+          const response = await fetch('/api/generate-questions', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ topic: aiTopic, count: aiQuestionCount }),
+          });
+          if (response.ok) {
+            const data = await response.json();
+            questionData = data.questions;
+          } else {
+            alert('Failed to generate questions');
+            return;
+          }
+        } catch (error) {
+          console.error('Error generating questions:', error);
+          return;
+        }
+        quizTitle = selectedQuiz ? selectedQuiz.title : aiTopic;
+        break;
+      default:
+        return;
     }
 
-    try {
-      const response = await fetch('/api/generate-questions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          topic: aiTopic,
-          numberOfQuestions: parseInt(aiQuestionCount, 10),
-        }),
-      });
+    if (questionData && quizTitle) {
+      try {
+        const response = await fetch('/api/add-questions', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ quizTitle, questions: questionData }),
+        });
 
-      if (!response.ok) {
-        throw new Error('Failed to generate questions');
+        if (response.ok) {
+          // Refresh the quizzes list
+          fetchQuizzes();
+          // Clear the input fields
+          setJsonInput('');
+          setNewQuestion({ question: '', options: ['', '', '', ''], correctAnswer: '' });
+          setAiTopic('');
+          setAiQuestionCount(1);
+          alert('Questions added successfully!');
+        } else {
+          const errorData = await response.json();
+          alert(`Failed to add questions: ${errorData.message}`);
+        }
+      } catch (error) {
+        console.error('Error adding questions:', error);
+        alert('An error occurred while adding questions');
       }
-
-      const data = await response.json();
-      if (data.success) {
-        alert(data.message);
-        setAiTopic('');
-        setAiQuestionCount(1);
-        await fetchQuizTitles(); // Refresh the quiz titles
-      } else {
-        alert('Failed to generate questions: ' + data.message);
-      }
-    } catch (error) {
-      console.error('Error generating questions:', error);
-      alert(`An error occurred while generating questions: ${error.message}`);
     }
   };
+
+  const resetForm = () => {
+    setNewQuestion({ 
+      topic: '',
+      question: '', 
+      options: ['', '', '', ''], 
+      correctAnswer: '' 
+    });
+    setJsonInput('');
+    setAiTopic('');
+    setAiQuestionCount(1);
+    setEditingQuestion(null);
+  };
+
+  const renderDashboard = () => (
+    <div className="dashboard-overview">
+      <h2>Dashboard Overview</h2>
+      <div className="dashboard-stats">
+        <div className="stat-card">
+          <h3>Total Quizzes</h3>
+          <p>{quizzes.length}</p>
+        </div>
+        <div className="stat-card">
+          <h3>Total Questions</h3>
+          <p>{quizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0)}</p>
+        </div>
+      </div>
+      <button className="primary-btn" onClick={() => setActiveSection('questionHub')}>
+        Go to Question Hub
+      </button>
+      <button className="primary-btn" onClick={() => {
+        setIsAddingQuestion(true);
+        setEditingQuestion(null);
+        resetForm();
+      }}>
+        Add Question
+      </button>
+    </div>
+  );
+
+  const renderQuestionHub = () => (
+    <div className="question-hub">
+      <h2>Question Hub</h2>
+      <div className="quiz-list">
+        {quizzes.map((quiz, index) => (
+          <div key={index} className="quiz-card" onClick={() => setSelectedQuiz(quiz)}>
+            <h3>{quiz.title}</h3>
+            <p>{quiz.questions.length} questions</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  const renderQuizQuestions = () => (
+    <div className="quiz-questions">
+      <h2>{selectedQuiz.title}</h2>
+      <button className="secondary-btn" onClick={() => setSelectedQuiz(null)}>
+        Back to Question Hub
+      </button>
+      <button className="primary-btn" onClick={() => {
+        setIsAddingQuestion(true);
+        setEditingQuestion(null);
+        resetForm();
+      }}>
+        Add New Question
+      </button>
+      <ul className="question-list">
+        {selectedQuiz.questions.map((question, index) => (
+          <li key={index} className="question-item">
+            <h3>{question.question}</h3>
+            <ul className="options-list">
+              {question.options.map((option, optionIndex) => (
+                <li key={optionIndex} className={option === question.correctAnswer ? 'correct-answer' : ''}>
+                  {option}
+                </li>
+              ))}
+            </ul>
+            <div className="question-actions">
+              <button className="edit-btn" onClick={() => handleEditQuestion(question)}>Edit</button>
+              <button className="delete-btn" onClick={() => handleDeleteQuestion(selectedQuiz.title, index)}>Delete</button>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+
+  const copyJsonPlaceholder = () => {
+    navigator.clipboard.writeText(jsonPlaceholder).then(() => {
+      alert('JSON placeholder copied to clipboard!');
+    }, (err) => {
+      console.error('Could not copy text: ', err);
+    });
+  };
+
+  const renderAddQuestion = () => (
+    <div className="add-question-section">
+      <h2>{editingQuestion ? 'Edit Question' : 'Add New Question'}</h2>
+      <button className="secondary-btn" onClick={() => {
+        setIsAddingQuestion(false);
+        setEditingQuestion(null);
+      }}>
+        Back to Dashboard
+      </button>
+      <div className="add-question-methods">
+        <div className="method">
+          <h4>Manual Entry</h4>
+          <input
+            type="text"
+            placeholder="Topic"
+            value={newQuestion.topic}
+            onChange={(e) => setNewQuestion({ ...newQuestion, topic: e.target.value })}
+          />
+          <input
+            type="text"
+            placeholder="Question"
+            value={newQuestion.question}
+            onChange={(e) => setNewQuestion({ ...newQuestion, question: e.target.value })}
+          />
+          {newQuestion.options.map((option, index) => (
+            <input
+              key={index}
+              type="text"
+              placeholder={`Option ${index + 1}`}
+              value={option}
+              onChange={(e) => {
+                const newOptions = [...newQuestion.options];
+                newOptions[index] = e.target.value;
+                setNewQuestion({ ...newQuestion, options: newOptions });
+              }}
+            />
+          ))}
+          <select
+            value={newQuestion.correctAnswer}
+            onChange={(e) => setNewQuestion({ ...newQuestion, correctAnswer: e.target.value })}
+          >
+            <option value="">Select correct answer</option>
+            {newQuestion.options.map((option, index) => (
+              <option key={index} value={option}>{option}</option>
+            ))}
+          </select>
+          <button onClick={() => handleAddQuestion('manual')}>
+            {editingQuestion ? 'Update Question' : 'Add Question'}
+          </button>
+        </div>
+        <div className="method">
+          <h4>JSON Input</h4>
+          <div className="json-input-container">
+            <textarea
+              value={jsonInput}
+              onChange={(e) => setJsonInput(e.target.value)}
+              placeholder={jsonPlaceholder}
+            />
+            <button className="copy-btn" onClick={copyJsonPlaceholder}>
+              📋 {/* Unicode clipboard icon */}
+            </button>
+          </div>
+          <button onClick={() => handleAddQuestion('json')}>Add from JSON</button>
+        </div>
+        <div className="method">
+          <h4>AI Generation</h4>
+          <input
+            type="text"
+            placeholder="Topic"
+            value={aiTopic}
+            onChange={(e) => setAiTopic(e.target.value)}
+          />
+          <input
+            type="number"
+            placeholder="Number of questions"
+            value={aiQuestionCount}
+            onChange={(e) => setAiQuestionCount(parseInt(e.target.value))}
+            min="1"
+            max="10"
+          />
+          <button onClick={() => handleAddQuestion('ai')}>Generate Questions</button>
+        </div>
+      </div>
+    </div>
+  );
+
+  const jsonPlaceholder = `{
+  "title": "General Knowledge",
+  "questions": [
+    {
+      "question": "Who painted the Mona Lisa?",
+      "options": [
+        "Vincent van Gogh",
+        "Leonardo da Vinci",
+        "Pablo Picasso",
+        "Michelangelo"
+      ],
+      "correctAnswer": "Leonardo da Vinci"
+    },
+    {
+      "question": "Which programming language is this quiz app likely built with?",
+      "options": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C++"
+      ],
+      "correctAnswer": "JavaScript"
+    }
+  ]
+}`;
 
   return (
     <div className="admin-dashboard">
       <header>
         <h1>Admin Dashboard</h1>
-        <button className="logout-btn" onClick={() => {
-          localStorage.removeItem('isAdminLoggedIn');
-          history.push('/admin/login');
-        }}>Logout</button>
+        <nav>
+          <button className={`nav-btn ${activeSection === 'dashboard' ? 'active' : ''}`} onClick={() => setActiveSection('dashboard')}>Dashboard</button>
+          <button className={`nav-btn ${activeSection === 'questionHub' ? 'active' : ''}`} onClick={() => setActiveSection('questionHub')}>Question Hub</button>
+          <button className="nav-btn" onClick={handleLogout}>Logout</button>
+        </nav>
       </header>
-
-      {/* Existing form for adding questions manually */}
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="quiz-select">Select a quiz:</label>
-          <select id="quiz-select" value={selectedQuiz ? selectedQuiz.title : ''} onChange={(e) => handleQuizSelect(e.target.value)}>
-            <option value="">Select a quiz</option>
-            {quizTitles.map((title) => (
-              <option key={title} value={title}>{title}</option>
-            ))}
-          </select>
-        </div>
-        <div className="form-group">
-          <label htmlFor="question-input">Question:</label>
-          <input
-            id="question-input"
-            type="text"
-            value={newQuestion.question}
-            onChange={handleQuestionChange}
-            placeholder="Enter question"
-          />
-        </div>
-        {newQuestion.options.map((option, index) => (
-          <div key={index} className="form-group">
-            <label htmlFor={`option-${index + 1}`}>Option {index + 1}:</label>
-            <input
-              id={`option-${index + 1}`}
-              type="text"
-              value={option}
-              onChange={(e) => handleOptionChange(index, e.target.value)}
-              placeholder={`Option ${index + 1}`}
-            />
-          </div>
-        ))}
-        <div className="form-group">
-          <label htmlFor="correct-answer">Correct answer:</label>
-          <input
-            id="correct-answer"
-            type="text"
-            value={newQuestion.correctAnswer}
-            onChange={handleCorrectAnswerChange}
-            placeholder="Correct answer"
-          />
-        </div>
-        <button type="submit" className="submit-btn">Add Question</button>
-      </form>
-
-      {/* New form for AI-generated questions */}
-      <form onSubmit={handleAiGenerate}>
-        <h2>Generate Questions with AI</h2>
-        <div className="form-group">
-          <label htmlFor="ai-topic">Topic:</label>
-          <input
-            id="ai-topic"
-            type="text"
-            value={aiTopic}
-            onChange={(e) => setAiTopic(e.target.value)}
-            placeholder="Enter topic for AI-generated questions"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="ai-question-count">Number of questions:</label>
-          <input
-            id="ai-question-count"
-            type="number"
-            value={aiQuestionCount}
-            onChange={(e) => setAiQuestionCount(e.target.value === '' ? '' : Number(e.target.value))}
-            min="1"
-            max="20"
-          />
-        </div>
-        <button type="submit" className="submit-btn">Generate Questions with AI</button>
-      </form>
+      <main>
+        {activeSection === 'dashboard' && renderDashboard()}
+        {activeSection === 'questionHub' && !selectedQuiz && renderQuestionHub()}
+        {selectedQuiz && !isAddingQuestion && renderQuizQuestions()}
+        {isAddingQuestion && renderAddQuestion()}
+      </main>
     </div>
   );
 }

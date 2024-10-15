@@ -4,16 +4,6 @@
       "title": "General Knowledge",
       "questions": [
         {
-          "question": "What is the capital of France?",
-          "options": [
-            "London",
-            "Berlin",
-            "Paris",
-            "Madrid"
-          ],
-          "correctAnswer": "Paris"
-        },
-        {
           "question": "Who painted the Mona Lisa?",
           "options": [
             "Vincent van Gogh",
@@ -24,16 +14,6 @@
           "correctAnswer": "Leonardo da Vinci"
         },
         {
-          "question": "What is the largest mammal in the world?",
-          "options": [
-            "African Elephant",
-            "Blue Whale",
-            "Giraffe",
-            "Hippopotamus"
-          ],
-          "correctAnswer": "Blue Whale"
-        },
-        {
           "question": "Which programming language is this quiz app likely built with?",
           "options": [
             "Python",
@@ -42,16 +22,6 @@
             "C++"
           ],
           "correctAnswer": "JavaScript"
-        },
-        {
-          "question": "agsfjdklgjkfa",
-          "options": [
-            "s",
-            "sdsf",
-            "ss",
-            "sp"
-          ],
-          "correctAnswer": "sp"
         }
       ]
     },
@@ -796,6 +766,271 @@
             "All of the above"
           ],
           "correctAnswer": "All of the above"
+        }
+      ]
+    },
+    {
+      "title": "Python Programming",
+      "questions": [
+        {
+          "question": "What is the correct syntax to print 'Hello, world!' in Python?",
+          "options": [
+            "print('Hello, world!')",
+            "System.out.println('Hello, world!');",
+            "echo 'Hello, world!'",
+            "console.log('Hello, world!');"
+          ],
+          "correctAnswer": "print('Hello, world!')"
+        },
+        {
+          "question": "What data type is used to store a sequence of characters in Python?",
+          "options": [
+            "Integer",
+            "Float",
+            "String",
+            "Boolean"
+          ],
+          "correctAnswer": "String"
+        },
+        {
+          "question": "Which operator is used for modulo division (finding the remainder) in Python?",
+          "options": [
+            "+",
+            "-",
+            "*",
+            "%"
+          ],
+          "correctAnswer": "%"
+        },
+        {
+          "question": "What is the purpose of the 'for' loop in Python?",
+          "options": [
+            "To define a function",
+            "To create a variable",
+            "To execute a block of code repeatedly",
+            "To handle errors"
+          ],
+          "correctAnswer": "To execute a block of code repeatedly"
+        },
+        {
+          "question": "Which of the following is a valid Python variable name?",
+          "options": [
+            "123variable",
+            "my-variable",
+            "my_variable",
+            "my variable"
+          ],
+          "correctAnswer": "my_variable"
+        },
+        {
+          "question": "What is the correct syntax for creating a list in Python?",
+          "options": [
+            "[1, 2, 3]",
+            "{1, 2, 3}",
+            "(1, 2, 3)",
+            "1, 2, 3"
+          ],
+          "correctAnswer": "[1, 2, 3]"
+        },
+        {
+          "question": "What is the output of the following code: `print(type(5))`?",
+          "options": [
+            "<class 'int'>",
+            "<class 'str'>",
+            "<class 'float'>",
+            "<class 'bool'>"
+          ],
+          "correctAnswer": "<class 'int'>"
+        },
+        {
+          "question": "What is the purpose of the `len()` function in Python?",
+          "options": [
+            "To concatenate strings",
+            "To find the length of a sequence",
+            "To convert a string to lowercase",
+            "To remove whitespace from a string"
+          ],
+          "correctAnswer": "To find the length of a sequence"
+        },
+        {
+          "question": "Which of the following is a valid Python variable name?",
+          "options": [
+            "123variable",
+            "my_variable",
+            "my-variable",
+            "my variable"
+          ],
+          "correctAnswer": "my_variable"
+        },
+        {
+          "question": "What is the result of the following code: `print(10 // 3)`?",
+          "options": [
+            "3.33",
+            "3",
+            "3.0",
+            "4"
+          ],
+          "correctAnswer": "3"
+        },
+        {
+          "question": "What is the purpose of the `for` loop in Python?",
+          "options": [
+            "To define a function",
+            "To create a new variable",
+            "To iterate over a sequence",
+            "To print a string to the console"
+          ],
+          "correctAnswer": "To iterate over a sequence"
+        },
+        {
+          "question": "Which of the following is a valid Python comment?",
+          "options": [
+            "# This is a comment",
+            "// This is a comment",
+            "/* This is a comment */",
+            "<!-- This is a comment -->"
+          ],
+          "correctAnswer": "# This is a comment"
+        },
+        {
+          "question": "What is the difference between `==` and `is` in Python?",
+          "options": [
+            "`==` checks for value equality, `is` checks for object identity",
+            "`is` checks for value equality, `==` checks for object identity",
+            "Both operators do the same thing",
+            "Neither operator is valid in Python"
+          ],
+          "correctAnswer": "`==` checks for value equality, `is` checks for object identity"
+        },
+        {
+          "question": "What is the purpose of the `try...except` block in Python?",
+          "options": [
+            "To handle exceptions",
+            "To define a function",
+            "To create a new variable",
+            "To iterate over a sequence"
+          ],
+          "correctAnswer": "To handle exceptions"
+        },
+        {
+          "question": "What is the output of the following code: `print('Hello' + 'World')`?",
+          "options": [
+            "HelloWorld",
+            "Hello World",
+            "Hello+World",
+            "Error"
+          ],
+          "correctAnswer": "HelloWorld"
+        }
+      ]
+    },
+    {
+      "title": "Computer Operating System",
+      "questions": [
+        {
+          "question": "What is the primary function of an operating system?",
+          "options": [
+            "To manage hardware resources and provide a user interface",
+            "To run applications without user interaction",
+            "To create and edit documents",
+            "To connect to the internet"
+          ],
+          "correctAnswer": "To manage hardware resources and provide a user interface"
+        },
+        {
+          "question": "Which of the following is NOT a common type of operating system?",
+          "options": [
+            "Real-time",
+            "Batch",
+            "Multi-user",
+            "Relational"
+          ],
+          "correctAnswer": "Relational"
+        },
+        {
+          "question": "What is the role of the kernel in an operating system?",
+          "options": [
+            "To manage the user interface",
+            "To control the flow of data between applications",
+            "To provide access to hardware resources",
+            "To perform basic file operations"
+          ],
+          "correctAnswer": "To control the flow of data between applications"
+        },
+        {
+          "question": "What is a process in an operating system?",
+          "options": [
+            "A single instruction",
+            "A running program with its own memory space",
+            "A file stored on a disk",
+            "A collection of related files"
+          ],
+          "correctAnswer": "A running program with its own memory space"
+        },
+        {
+          "question": "What is the purpose of a virtual memory system?",
+          "options": [
+            "To provide faster access to data on the hard drive",
+            "To allow programs to run even if there is not enough physical RAM",
+            "To protect the operating system from user applications",
+            "To create multiple user accounts"
+          ],
+          "correctAnswer": "To allow programs to run even if there is not enough physical RAM"
+        }
+      ]
+    },
+    {
+      "title": "GRE Vocabulary Test",
+      "questions": [
+        {
+          "question": "What does the word 'abstemious' mean?",
+          "options": [
+            "Indulgent",
+            "Moderate",
+            "Gluttonous",
+            "Exuberant"
+          ],
+          "correctAnswer": "Moderate"
+        },
+        {
+          "question": "The word 'laconic' is most similar in meaning to:",
+          "options": [
+            "Verbose",
+            "Concise",
+            "Prolix",
+            "Effusive"
+          ],
+          "correctAnswer": "Concise"
+        },
+        {
+          "question": "Which of the following words is a synonym for the word 'nefarious'?",
+          "options": [
+            "Benevolent",
+            "Virtuous",
+            "Innocent",
+            "Wicked"
+          ],
+          "correctAnswer": "Wicked"
+        },
+        {
+          "question": "The word 'equivocate' means to:",
+          "options": [
+            "Speak clearly and directly",
+            "Speak truthfully and honestly",
+            "Speak ambiguously or evasively",
+            "Speak forcefully and persuasively"
+          ],
+          "correctAnswer": "Speak ambiguously or evasively"
+        },
+        {
+          "question": "The word 'supercilious' is most similar in meaning to:",
+          "options": [
+            "Humble",
+            "Arrogant",
+            "Modest",
+            "Affable"
+          ],
+          "correctAnswer": "Arrogant"
         }
       ]
     }
