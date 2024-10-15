@@ -26,6 +26,18 @@ function AdminDashboard() {
     fetchQuizzes();
   }, []);
 
+  useEffect(() => {
+    const homePage = document.getElementById('home-page');
+    if (homePage) {
+      homePage.style.display = 'none';
+    }
+    return () => {
+      if (homePage) {
+        homePage.style.display = 'block';
+      }
+    };
+  }, []);
+
   const fetchQuizzes = async () => {
     try {
       const response = await fetch('/quizzes.json');
@@ -176,7 +188,11 @@ function AdminDashboard() {
           <p>{quizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0)}</p>
         </div>
       </div>
-      <button className="primary-btn" onClick={() => setActiveSection('questionHub')}>
+      <button className="primary-btn" onClick={() => {
+        setActiveSection('questionHub');
+        setIsAddingQuestion(false);
+        resetForm();
+      }}>
         Go to Question Hub
       </button>
       <button className="primary-btn" onClick={() => {
@@ -194,9 +210,11 @@ function AdminDashboard() {
       <h2>Question Hub</h2>
       <div className="quiz-list">
         {quizzes.map((quiz, index) => (
-          <div key={index} className="quiz-card" onClick={() => setSelectedQuiz(quiz)}>
+          <div key={index} className="quiz-card">
             <h3>{quiz.title}</h3>
             <p>{quiz.questions.length} questions</p>
+            <button onClick={() => setSelectedQuiz(quiz)}>View Questions</button>
+            <button onClick={() => handleDeleteQuiz(quiz.title)} className="delete-btn">Delete Quiz</button>
           </div>
         ))}
       </div>
@@ -357,13 +375,54 @@ function AdminDashboard() {
   ]
 }`;
 
+  const handleDeleteQuiz = async (quizTitle) => {
+    if (window.confirm(`Are you sure you want to delete the "${quizTitle}" quiz?`)) {
+      try {
+        const response = await fetch('/api/delete-quiz', {
+          method: 'DELETE',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ quizTitle }),
+        });
+        if (response.ok) {
+          await fetchQuizzes();
+          setSelectedQuiz(null);
+        } else {
+          alert('Failed to delete quiz');
+        }
+      } catch (error) {
+        console.error('Error deleting quiz:', error);
+      }
+    }
+  };
+
+  const handleDashboardClick = () => {
+    setActiveSection('dashboard');
+    setIsAddingQuestion(false);
+    setSelectedQuiz(null);  // Add this line to collapse the category view
+    resetForm();
+  };
+
   return (
     <div className="admin-dashboard">
       <header>
         <h1>Admin Dashboard</h1>
         <nav>
-          <button className={`nav-btn ${activeSection === 'dashboard' ? 'active' : ''}`} onClick={() => setActiveSection('dashboard')}>Dashboard</button>
-          <button className={`nav-btn ${activeSection === 'questionHub' ? 'active' : ''}`} onClick={() => setActiveSection('questionHub')}>Question Hub</button>
+          <button 
+            className={`nav-btn ${activeSection === 'dashboard' ? 'active' : ''}`} 
+            onClick={handleDashboardClick}  // Use the new function here
+          >
+            Dashboard
+          </button>
+          <button 
+            className={`nav-btn ${activeSection === 'questionHub' ? 'active' : ''}`} 
+            onClick={() => {
+              setActiveSection('questionHub');
+              setIsAddingQuestion(false);
+              resetForm();
+            }}
+          >
+            Question Hub
+          </button>
           <button className="nav-btn" onClick={handleLogout}>Logout</button>
         </nav>
       </header>

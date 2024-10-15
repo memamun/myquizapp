@@ -101,41 +101,6 @@
       ]
     },
     {
-      "title": "History Quiz",
-      "questions": [
-        {
-          "question": "Who was the first President of the United States?",
-          "options": [
-            "George Washington",
-            "Thomas Jefferson",
-            "Abraham Lincoln",
-            "John Adams"
-          ],
-          "correctAnswer": "George Washington"
-        },
-        {
-          "question": "What year did World War II end?",
-          "options": [
-            "1945",
-            "1944",
-            "1939",
-            "1950"
-          ],
-          "correctAnswer": "1945"
-        },
-        {
-          "question": "Which ancient civilization built the pyramids?",
-          "options": [
-            "Romans",
-            "Greeks",
-            "Egyptians",
-            "Mayans"
-          ],
-          "correctAnswer": "Egyptians"
-        }
-      ]
-    },
-    {
       "title": "Geography Quiz",
       "questions": [
         {
