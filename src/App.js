@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import AdminLogin from './components/AdminLogin';
 import AdminDashboard from './components/AdminDashboard';
+import Home from './components/Home'; // Create this component if it doesn't exist
 // Import other components
 
 function PrivateRoute({ component: Component, ...rest }) {
@@ -20,11 +21,15 @@ function PrivateRoute({ component: Component, ...rest }) {
 }
 
 function App() {
+  console.log('App component rendered');
   return (
     <Router>
       <Switch>
-        {/* Other routes */}
-        <Route path="/admin/login" component={AdminLogin} />
+        <Route exact path="/" component={Home} />
+        <Route path="/admin/login" render={(props) => {
+          console.log('AdminLogin route matched');
+          return <AdminLogin {...props} />;
+        }} />
         <PrivateRoute path="/admin/dashboard" component={AdminDashboard} />
       </Switch>
     </Router>

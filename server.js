@@ -6,6 +6,12 @@ const helmet = require('helmet');
 
 const app = express();
 
+// Logging middleware
+app.use((req, res, next) => {
+  console.log(`Received request: ${req.method} ${req.url}`);
+  next();
+});
+
 // Use helmet middleware
 app.use(helmet({
   contentSecurityPolicy: {
@@ -128,15 +134,19 @@ app.post('/api/generate-questions', async (req, res) => {
 
 // Other routes and server setup...
 
-// Add this catch-all route at the end of your file
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'build')));
+
+// Catch-all route handler
 app.get('*', (req, res) => {
+  console.log(`Serving React app for: ${req.url}`);
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 // Update the port to use an environment variable or default to 3001
-const port = process.env.PORT || 10000;
+const port = process.env.PORT || 3001;
 
 // Update the listen method to use the PORT variable
-app.listen(port, '0.0.0.0', () => {
+app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });

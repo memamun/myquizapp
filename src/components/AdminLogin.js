@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
 function AdminLogin() {
+  useEffect(() => {
+    console.log('AdminLogin component mounted');
+  }, []);
+
+  console.log('AdminLogin component rendered');
   const [password, setPassword] = useState('');
   const history = useHistory();
 
