@@ -20,6 +20,8 @@ function AdminDashboard() {
   const [isAddingQuestion, setIsAddingQuestion] = useState(false);
   const history = useHistory();
   const { logout } = useAuth();
+  const [tooltip, setTooltip] = useState({ message: '', type: '' });
+  const [showTooltipFlag, setShowTooltipFlag] = useState(false);
 
   useEffect(() => {
     console.log('AdminDashboard mounted');
@@ -40,8 +42,12 @@ function AdminDashboard() {
 
   const fetchQuizzes = async () => {
     try {
-      const response = await fetch('/quizzes.json');
+      const response = await fetch('/api/quizzes');
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const data = await response.json();
+      console.log('Fetched quizzes:', data.quizzes);
       setQuizzes(data.quizzes);
     } catch (error) {
       console.error('Error fetching quizzes:', error);
@@ -53,10 +59,28 @@ function AdminDashboard() {
     history.push('/admin/login');
   };
 
-  const handleEditQuestion = (question) => {
-    setEditingQuestion(question);
-    setNewQuestion(question);
-    setIsAddingQuestion(true);
+  const handleEditQuestion = async (quizTitle, questionIndex, updatedQuestion) => {
+    try {
+      const response = await fetch('/api/edit-question', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ quizTitle, questionIndex, updatedQuestion }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      await fetchQuizzes();
+      const updatedQuiz = quizzes.find(q => q.title === quizTitle);
+      setSelectedQuiz(updatedQuiz);
+      setIsAddingQuestion(false);
+      setEditingQuestion(null);
+      showTooltip('Question edited successfully');
+    } catch (error) {
+      console.error('Error editing question:', error);
+      showTooltip('Failed to edit question', 'error');
+    }
   };
 
   const handleDeleteQuestion = async (quizTitle, questionIndex) => {
@@ -67,15 +91,16 @@ function AdminDashboard() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ quizTitle, questionIndex }),
         });
-        if (response.ok) {
-          await fetchQuizzes();
-          const updatedQuiz = quizzes.find(q => q.title === quizTitle);
-          setSelectedQuiz(updatedQuiz);
-        } else {
-          alert('Failed to delete question');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
+        await fetchQuizzes();
+        const updatedQuiz = quizzes.find(q => q.title === quizTitle);
+        setSelectedQuiz(updatedQuiz);
+        showTooltip('Question deleted successfully');
       } catch (error) {
         console.error('Error deleting question:', error);
+        showTooltip('Failed to delete question', 'error');
       }
     }
   };
@@ -115,11 +140,12 @@ function AdminDashboard() {
           const response = await fetch('/api/generate-questions', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ topic: aiTopic, count: aiQuestionCount }),
+            body: JSON.stringify({ topic: aiTopic, numberOfQuestions: aiQuestionCount }),
           });
           if (response.ok) {
             const data = await response.json();
             questionData = data.questions;
+            quizTitle = aiTopic;
           } else {
             alert('Failed to generate questions');
             return;
@@ -128,7 +154,6 @@ function AdminDashboard() {
           console.error('Error generating questions:', error);
           return;
         }
-        quizTitle = selectedQuiz ? selectedQuiz.title : aiTopic;
         break;
       default:
         return;
@@ -142,22 +167,18 @@ function AdminDashboard() {
           body: JSON.stringify({ quizTitle, questions: questionData }),
         });
 
-        if (response.ok) {
-          // Refresh the quizzes list
-          fetchQuizzes();
-          // Clear the input fields
-          setJsonInput('');
-          setNewQuestion({ question: '', options: ['', '', '', ''], correctAnswer: '' });
-          setAiTopic('');
-          setAiQuestionCount(1);
-          alert('Questions added successfully!');
-        } else {
-          const errorData = await response.json();
-          alert(`Failed to add questions: ${errorData.message}`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
+
+        await fetchQuizzes();
+        const updatedQuiz = quizzes.find(q => q.title === quizTitle);
+        setSelectedQuiz(updatedQuiz);
+        resetForm();
+        showTooltip('Question(s) added successfully');
       } catch (error) {
-        console.error('Error adding questions:', error);
-        alert('An error occurred while adding questions');
+        console.error('Error adding question(s):', error);
+        showTooltip('Failed to add question(s)', 'error');
       }
     }
   };
@@ -246,7 +267,7 @@ function AdminDashboard() {
               ))}
             </ul>
             <div className="question-actions">
-              <button className="edit-btn" onClick={() => handleEditQuestion(question)}>Edit</button>
+              <button className="edit-btn" onClick={() => startEditingQuestion(question, index)}>Edit</button>
               <button className="delete-btn" onClick={() => handleDeleteQuestion(selectedQuiz.title, index)}>Delete</button>
             </div>
           </li>
@@ -269,8 +290,9 @@ function AdminDashboard() {
       <button className="secondary-btn" onClick={() => {
         setIsAddingQuestion(false);
         setEditingQuestion(null);
+        resetForm();
       }}>
-        Back to Dashboard
+        Back to Questions
       </button>
       <div className="add-question-methods">
         <div className="method">
@@ -309,7 +331,13 @@ function AdminDashboard() {
               <option key={index} value={option}>{option}</option>
             ))}
           </select>
-          <button onClick={() => handleAddQuestion('manual')}>
+          <button onClick={() => {
+            if (editingQuestion) {
+              handleEditQuestion(selectedQuiz.title, editingQuestion.index, newQuestion);
+            } else {
+              handleAddQuestion('manual');
+            }
+          }}>
             {editingQuestion ? 'Update Question' : 'Add Question'}
           </button>
         </div>
@@ -341,7 +369,7 @@ function AdminDashboard() {
             value={aiQuestionCount}
             onChange={(e) => setAiQuestionCount(parseInt(e.target.value))}
             min="1"
-            max="10"
+            max="20"
           />
           <button onClick={() => handleAddQuestion('ai')}>Generate Questions</button>
         </div>
@@ -383,14 +411,16 @@ function AdminDashboard() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ quizTitle }),
         });
-        if (response.ok) {
-          await fetchQuizzes();
-          setSelectedQuiz(null);
-        } else {
-          alert('Failed to delete quiz');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
+        await fetchQuizzes();
+        setSelectedQuiz(null);
+        setActiveSection('questionHub');
+        showTooltip('Quiz deleted successfully');
       } catch (error) {
         console.error('Error deleting quiz:', error);
+        showTooltip('Failed to delete quiz', 'error');
       }
     }
   };
@@ -400,6 +430,23 @@ function AdminDashboard() {
     setIsAddingQuestion(false);
     setSelectedQuiz(null);  // Add this line to collapse the category view
     resetForm();
+  };
+
+  const startEditingQuestion = (question, index) => {
+    setEditingQuestion({ ...question, index });
+    setNewQuestion({
+      topic: selectedQuiz.title,
+      question: question.question,
+      options: [...question.options],
+      correctAnswer: question.correctAnswer
+    });
+    setIsAddingQuestion(true);
+  };
+
+  const showTooltip = (message, type = 'success') => {
+    setTooltip({ message, type });
+    setShowTooltipFlag(true);
+    setTimeout(() => setShowTooltipFlag(false), 3000);
   };
 
   return (
@@ -432,6 +479,11 @@ function AdminDashboard() {
         {selectedQuiz && !isAddingQuestion && renderQuizQuestions()}
         {isAddingQuestion && renderAddQuestion()}
       </main>
+      {showTooltipFlag && (
+        <div className={`tooltip ${tooltip.type}`}>
+          {tooltip.message}
+        </div>
+      )}
     </div>
   );
 }

@@ -1,176 +1,6 @@
 {
   "quizzes": [
     {
-      "title": "General Knowledge",
-      "questions": [
-        {
-          "question": "Who painted the Mona Lisa?",
-          "options": [
-            "Vincent van Gogh",
-            "Leonardo da Vinci",
-            "Pablo Picasso",
-            "Michelangelo"
-          ],
-          "correctAnswer": "Leonardo da Vinci"
-        },
-        {
-          "question": "Which programming language is this quiz app likely built with?",
-          "options": [
-            "Python",
-            "Java",
-            "JavaScript",
-            "C++"
-          ],
-          "correctAnswer": "JavaScript"
-        }
-      ]
-    },
-    {
-      "title": "Science Quiz",
-      "questions": [
-        {
-          "question": "Which planet is known as the Red Planet?",
-          "options": [
-            "Mars",
-            "Venus",
-            "Jupiter",
-            "Saturn"
-          ],
-          "correctAnswer": "Mars"
-        },
-        {
-          "question": "What is the chemical symbol for water?",
-          "options": [
-            "H2O",
-            "O2",
-            "CO2",
-            "NaCl"
-          ],
-          "correctAnswer": "H2O"
-        },
-        {
-          "question": "What is the powerhouse of the cell?",
-          "options": [
-            "Nucleus",
-            "Ribosome",
-            "Mitochondria",
-            "Endoplasmic Reticulum"
-          ],
-          "correctAnswer": "Mitochondria"
-        },
-        {
-          "question": "What gas do plants absorb from the atmosphere?",
-          "options": [
-            "Oxygen",
-            "Carbon Dioxide",
-            "Nitrogen",
-            "Hydrogen"
-          ],
-          "correctAnswer": "Carbon Dioxide"
-        },
-        {
-          "question": "What is the process by which plants make their food?",
-          "options": [
-            "Photosynthesis",
-            "Respiration",
-            "Transpiration",
-            "Digestion"
-          ],
-          "correctAnswer": "Photosynthesis"
-        },
-        {
-          "question": "What is the most abundant gas in the Earth's atmosphere?",
-          "options": [
-            "Oxygen",
-            "Carbon Dioxide",
-            "Nitrogen",
-            "Argon"
-          ],
-          "correctAnswer": "Nitrogen"
-        },
-        {
-          "question": "The color of the sky is?",
-          "options": [
-            "Red",
-            "Green",
-            "Blue",
-            "Pink"
-          ],
-          "correctAnswer": "Blue"
-        }
-      ]
-    },
-    {
-      "title": "Geography Quiz",
-      "questions": [
-        {
-          "question": "What is the largest continent?",
-          "options": [
-            "Africa",
-            "Asia",
-            "North America",
-            "Antarctica"
-          ],
-          "correctAnswer": "Asia"
-        },
-        {
-          "question": "Which river is the longest in the world?",
-          "options": [
-            "Amazon",
-            "Nile",
-            "Yangtze",
-            "Mississippi"
-          ],
-          "correctAnswer": "Nile"
-        },
-        {
-          "question": "What is the capital city of Japan?",
-          "options": [
-            "Seoul",
-            "Beijing",
-            "Tokyo",
-            "Bangkok"
-          ],
-          "correctAnswer": "Tokyo"
-        }
-      ]
-    },
-    {
-      "title": "Literature Quiz",
-      "questions": [
-        {
-          "question": "Who wrote 'Romeo and Juliet'?",
-          "options": [
-            "Charles Dickens",
-            "William Shakespeare",
-            "Mark Twain",
-            "Jane Austen"
-          ],
-          "correctAnswer": "William Shakespeare"
-        },
-        {
-          "question": "What is the name of the wizarding school in Harry Potter?",
-          "options": [
-            "Hogwarts",
-            "Beauxbatons",
-            "Durmstrang",
-            "Ilvermorny"
-          ],
-          "correctAnswer": "Hogwarts"
-        },
-        {
-          "question": "Who is the author of '1984'?",
-          "options": [
-            "George Orwell",
-            "Aldous Huxley",
-            "F. Scott Fitzgerald",
-            "Ernest Hemingway"
-          ],
-          "correctAnswer": "George Orwell"
-        }
-      ]
-    },
-    {
       "title": "Programming",
       "questions": [
         {
@@ -209,16 +39,6 @@
       "title": "বাংলাদেশের সংবিধান",
       "questions": [
         {
-          "question": "বাংলাদেশের সংবিধান কবে গৃহীত হয়?",
-          "options": [
-            "৪ নভেম্বর, ১৯৭১",
-            "১৬ ডিসেম্বর, ১৯৭১",
-            "৪ নভেম্বর, ১৯৭২",
-            "১৬ ডিসেম্বর, ১৯৭২"
-          ],
-          "correctAnswer": "৪ নভেম্বর, ১৯৭২"
-        },
-        {
           "question": "বাংলাদেশের সংবিধানে কতটি অনুচ্ছেদ রয়েছে?",
           "options": [
             "১৫৬",
@@ -227,16 +47,6 @@
             "১৫০"
           ],
           "correctAnswer": "১৫৩"
-        },
-        {
-          "question": "বাংলাদেশের সংবিধানের প্রথম ধারা কি?",
-          "options": [
-            "রাষ্ট্রের নাম",
-            "রাষ্ট্রের ভাষা",
-            "রাষ্ট্রের ধর্ম",
-            "রাষ্ট্রের আদর্শ"
-          ],
-          "correctAnswer": "রাষ্ট্রের নাম"
         },
         {
           "question": "বাংলাদেশের সংবিধানের দ্বিতীয় ধারা কি?",
@@ -322,16 +132,6 @@
             "ইন্দোনেশিয়া"
           ],
           "correctAnswer": "চীন"
-        },
-        {
-          "question": "এশিয়ার কোন পর্বতমালা বিশ্বের সর্বোচ্চ?",
-          "options": [
-            "হিমালয়",
-            "আল্পস",
-            "রকি",
-            "আন্দেস"
-          ],
-          "correctAnswer": "হিমালয়"
         },
         {
           "question": "কোন নদী এশিয়ার সবচেয়ে বড় নদী?",
@@ -996,6 +796,2186 @@
             "Affable"
           ],
           "correctAnswer": "Arrogant"
+        }
+      ]
+    },
+    {
+      "title": "General Knowledge",
+      "questions": [
+        {
+          "question": "Who painted the Mona Lisa?",
+          "options": [
+            "Vincent van Gogh",
+            "Leonardo da Vinci",
+            "Pablo Picasso",
+            "Michelangelo"
+          ],
+          "correctAnswer": "Leonardo da Vinci"
+        },
+        {
+          "question": "Which programming language is this quiz app likely built with?",
+          "options": [
+            "Python",
+            "Java",
+            "JavaScript",
+            "C++"
+          ],
+          "correctAnswer": "JavaScript"
+        }
+      ]
+    },
+    {
+      "title": "Java",
+      "questions": [
+        {
+          "question": "Which of the following is NOT a valid Java data type?",
+          "options": [
+            "int",
+            "float",
+            "string",
+            "boolean"
+          ],
+          "correctAnswer": "string"
+        },
+        {
+          "question": "What is the purpose of the 'final' keyword in Java?",
+          "options": [
+            "To declare a variable that cannot be changed after initialization",
+            "To prevent a class from being inherited",
+            "To declare a method that cannot be overridden",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "What is the difference between '=='' and 'equals()' in Java?",
+          "options": [
+            "'==' compares object references, while 'equals()' compares object contents",
+            "'equals()' compares object references, while '==' compares object contents",
+            "Both operators are equivalent",
+            "None of the above"
+          ],
+          "correctAnswer": "'==' compares object references, while 'equals()' compares object contents"
+        },
+        {
+          "question": "Which of the following is a valid way to create a new object in Java?",
+          "options": [
+            "new Object();",
+            "Object obj = new Object();",
+            "Object obj = Object();",
+            "All of the above"
+          ],
+          "correctAnswer": "Object obj = new Object();"
+        },
+        {
+          "question": "Which of the following is NOT a valid access modifier in Java?",
+          "options": [
+            "public",
+            "private",
+            "protected",
+            "internal"
+          ],
+          "correctAnswer": "internal"
+        },
+        {
+          "question": "What is the difference between 'static' and 'instance' methods in Java?",
+          "options": [
+            "Static methods belong to the class, while instance methods belong to objects",
+            "Instance methods belong to the class, while static methods belong to objects",
+            "There is no difference",
+            "None of the above"
+          ],
+          "correctAnswer": "Static methods belong to the class, while instance methods belong to objects"
+        },
+        {
+          "question": "What is the purpose of the 'abstract' keyword in Java?",
+          "options": [
+            "To declare a class that cannot be instantiated",
+            "To declare a method that must be implemented in subclasses",
+            "Both of the above",
+            "None of the above"
+          ],
+          "correctAnswer": "Both of the above"
+        },
+        {
+          "question": "What is the purpose of the 'interface' keyword in Java?",
+          "options": [
+            "To define a contract that classes can implement",
+            "To declare a class that cannot be instantiated",
+            "To declare a method that must be implemented in subclasses",
+            "None of the above"
+          ],
+          "correctAnswer": "To define a contract that classes can implement"
+        },
+        {
+          "question": "What is the purpose of the 'this' keyword in Java?",
+          "options": [
+            "To refer to the current object",
+            "To create a new object",
+            "To access a static method",
+            "None of the above"
+          ],
+          "correctAnswer": "To refer to the current object"
+        }
+      ]
+    },
+    {
+      "title": "sddadaa",
+      "questions": [
+        {
+          "question": "asfs",
+          "options": [
+            "afas",
+            "a",
+            "s",
+            "s"
+          ],
+          "correctAnswer": "afas"
+        }
+      ]
+    },
+    {
+      "title": "Android Smartphone",
+      "questions": [
+        {
+          "question": "Which of the following is NOT a feature of Android?",
+          "options": [
+            "Open source operating system",
+            "Customization options",
+            "Pre-installed apps",
+            "Proprietary software ecosystem"
+          ],
+          "correctAnswer": "Proprietary software ecosystem"
+        },
+        {
+          "question": "What is the name of the Android operating system's user interface?",
+          "options": [
+            "iOS",
+            "Windows Phone",
+            "Android UI",
+            "Material Design"
+          ],
+          "correctAnswer": "Material Design"
+        },
+        {
+          "question": "Which of these is a popular Android app store?",
+          "options": [
+            "App Store",
+            "Play Store",
+            "Windows Store",
+            "Amazon Appstore"
+          ],
+          "correctAnswer": "Play Store"
+        },
+        {
+          "question": "What is the purpose of the 'AndroidManifest.xml' file?",
+          "options": [
+            "Stores user data",
+            "Defines app permissions",
+            "Manages app updates",
+            "Contains the app's source code"
+          ],
+          "correctAnswer": "Defines app permissions"
+        },
+        {
+          "question": "Which technology allows Android apps to communicate with each other?",
+          "options": [
+            "Bluetooth",
+            "NFC",
+            "Intents",
+            "WiFi"
+          ],
+          "correctAnswer": "Intents"
+        },
+        {
+          "question": "What is the name of the file system used by Android?",
+          "options": [
+            "FAT32",
+            "NTFS",
+            "ext4",
+            "HFS+"
+          ],
+          "correctAnswer": "ext4"
+        },
+        {
+          "question": "Which of the following is NOT a core component of the Android architecture?",
+          "options": [
+            "Linux Kernel",
+            "Android Runtime",
+            "Application Framework",
+            "iOS Framework"
+          ],
+          "correctAnswer": "iOS Framework"
+        },
+        {
+          "question": "What is the name of the open-source project that led to the creation of Android?",
+          "options": [
+            "Android Open Source Project (AOSP)",
+            "Google Open Source Project",
+            "Linux Open Source Project",
+            "Open Handset Alliance"
+          ],
+          "correctAnswer": "Android Open Source Project (AOSP)"
+        },
+        {
+          "question": "What is the purpose of the 'adb' command-line tool?",
+          "options": [
+            "Manages Android device drivers",
+            "Backs up Android data",
+            "Installs and debugs Android apps",
+            "Creates custom ROMs"
+          ],
+          "correctAnswer": "Installs and debugs Android apps"
+        },
+        {
+          "question": "Which of these is a popular Android development language?",
+          "options": [
+            "Python",
+            "C++",
+            "Swift",
+            "Java"
+          ],
+          "correctAnswer": "Java"
+        }
+      ]
+    },
+    {
+      "title": "History of Iraq",
+      "questions": [
+        {
+          "question": "What ancient civilization is considered the birthplace of the Mesopotamian civilization and ruled over much of Mesopotamia from the 24th to the 23rd centuries BC?",
+          "options": [
+            "Sumer",
+            "Akkadian Empire",
+            "Babylonian Empire",
+            "Assyrian Empire"
+          ],
+          "correctAnswer": "Sumer"
+        },
+        {
+          "question": "Which king is credited with creating the first empire in Mesopotamia, uniting the Sumerian city-states under Akkadian rule?",
+          "options": [
+            "Hammurabi",
+            "Sargon the Great",
+            "Gilgamesh",
+            "Nebuchadnezzar II"
+          ],
+          "correctAnswer": "Sargon the Great"
+        },
+        {
+          "question": "What is the name of the famous code of laws established by Hammurabi, known for its strict punishments and principles of justice?",
+          "options": [
+            "Code of Ur-Nammu",
+            "Code of Hammurabi",
+            "Code of Ashurbanipal",
+            "Code of Darius"
+          ],
+          "correctAnswer": "Code of Hammurabi"
+        },
+        {
+          "question": "Which ancient city, known for its Hanging Gardens, was a center of learning and culture under the rule of Nebuchadnezzar II?",
+          "options": [
+            "Assur",
+            "Nineveh",
+            "Babylon",
+            "Ur"
+          ],
+          "correctAnswer": "Babylon"
+        },
+        {
+          "question": "What is the name of the powerful Assyrian king who expanded the Assyrian Empire to its greatest extent, known for his ruthless military campaigns and library at Nineveh?",
+          "options": [
+            "Ashurbanipal",
+            "Tiglath-Pileser III",
+            "Sargon II",
+            "Sennacherib"
+          ],
+          "correctAnswer": "Ashurbanipal"
+        },
+        {
+          "question": "Which Persian king conquered the Neo-Babylonian Empire and brought an end to the Babylonian Exile?",
+          "options": [
+            "Darius I",
+            "Xerxes I",
+            "Cyrus the Great",
+            "Cambyses II"
+          ],
+          "correctAnswer": "Cyrus the Great"
+        },
+        {
+          "question": "After the decline of the Abbasid Caliphate, what dynasty ruled over much of Iraq from the 10th to the 13th centuries, known for its patronage of arts and sciences?",
+          "options": [
+            "Umayyad",
+            "Fatimid",
+            "Seljuk",
+            "Ottoman"
+          ],
+          "correctAnswer": "Seljuk"
+        },
+        {
+          "question": "Which Ottoman ruler conquered Baghdad in 1638, marking the end of the Safavid dynasty and the beginning of Ottoman rule in Iraq?",
+          "options": [
+            "Mehmed II",
+            "Selim I",
+            "Suleiman the Magnificent",
+            "Murad IV"
+          ],
+          "correctAnswer": "Murad IV"
+        },
+        {
+          "question": "During the early 20th century, what British mandate was established over Iraq, following the collapse of the Ottoman Empire?",
+          "options": [
+            "Mandate for Palestine",
+            "Mandate for Syria",
+            "Mandate for Iraq",
+            "Mandate for Transjordan"
+          ],
+          "correctAnswer": "Mandate for Iraq"
+        },
+        {
+          "question": "Who was the first president of Iraq after independence, leading the country from 1932 to 1933?",
+          "options": [
+            "Faisal I",
+            "Nuri al-Said",
+            "Abdul Karim Qasim",
+            "Saddam Hussein"
+          ],
+          "correctAnswer": "Faisal I"
+        },
+        {
+          "question": "What was the name of the 1958 revolution that led to the overthrow of the Hashemite monarchy and the establishment of a republic in Iraq?",
+          "options": [
+            "14th of July Revolution",
+            "14th of July Coup",
+            "14th of July Uprising",
+            "14th of July Revolt"
+          ],
+          "correctAnswer": "14th of July Revolution"
+        },
+        {
+          "question": "What was the name of the Ba'athist party that came to power in Iraq in 1968 and ruled the country for over three decades?",
+          "options": [
+            "Arab Socialist Ba'ath Party",
+            "Iraqi Ba'ath Party",
+            "Ba'ath Party of Iraq",
+            "Arab Socialist Party"
+          ],
+          "correctAnswer": "Ba'ath Party of Iraq"
+        },
+        {
+          "question": "What was the name of the 1980-1988 war between Iraq and Iran, a conflict that left hundreds of thousands dead and devastated both countries?",
+          "options": [
+            "Iran-Iraq War",
+            "Persian Gulf War",
+            "Gulf War",
+            "First Gulf War"
+          ],
+          "correctAnswer": "Iran-Iraq War"
+        },
+        {
+          "question": "What was the name of the 1991 Gulf War, triggered by Iraq's invasion of Kuwait, that resulted in the expulsion of Iraqi forces from Kuwait?",
+          "options": [
+            "Gulf War",
+            "Persian Gulf War",
+            "First Gulf War",
+            "Second Gulf War"
+          ],
+          "correctAnswer": "Gulf War"
+        },
+        {
+          "question": "What was the name of the 2003 invasion of Iraq led by the United States, which led to the overthrow of Saddam Hussein's regime?",
+          "options": [
+            "Operation Iraqi Freedom",
+            "Operation Desert Storm",
+            "Operation Enduring Freedom",
+            "Operation Iraqi Liberation"
+          ],
+          "correctAnswer": "Operation Iraqi Freedom"
+        }
+      ]
+    },
+    {
+      "title": "মার্কিন ব্যবসায়ীদের বাংলাদেশ সফর",
+      "questions": [
+        {
+          "question": "মার্কিন ব্যবসায়ীদের বাংলাদেশ সফরের মূল উদ্দেশ্য কী?",
+          "options": [
+            "বাংলাদেশের সাংস্কৃতিক ঐতিহ্যের সাথে পরিচিত হওয়া",
+            "বাংলাদেশের দরিদ্র জনগোষ্ঠীর সহায়তা করা",
+            "বাংলাদেশে ব্যবসায়িক সুযোগ অন্বেষণ করা",
+            "বাংলাদেশের রাজনৈতিক পরিস্থিতি পর্যবেক্ষণ করা"
+          ],
+          "correctAnswer": "বাংলাদেশে ব্যবসায়িক সুযোগ অন্বেষণ করা"
+        },
+        {
+          "question": "মার্কিন ব্যবসায়ীরা বাংলাদেশে কোন শিল্পে বেশি আগ্রহ দেখায়?",
+          "options": [
+            "প্রযুক্তি",
+            "পরিবহন",
+            "কৃষি",
+            "শিক্ষা"
+          ],
+          "correctAnswer": "প্রযুক্তি"
+        },
+        {
+          "question": "বাংলাদেশে মার্কিন ব্যবসায়ীদের জন্য কোন বিষয়টি সবচেয়ে বড় চ্যালেঞ্জ?",
+          "options": [
+            "ভিসা প্রাপ্তি",
+            "পরিবহন ব্যবস্থা",
+            "বিদ্যুৎ সংকট",
+            "শ্রমিকদের দক্ষতা"
+          ],
+          "correctAnswer": "শ্রমিকদের দক্ষতা"
+        },
+        {
+          "question": "মার্কিন ব্যবসায়ীরা বাংলাদেশের সাথে কোন ধরণের বাণিজ্যিক সম্পর্ক গড়ে তুলতে চায়?",
+          "options": [
+            "দ্বিপাক্ষিক",
+            "একতরফা",
+            "বহুপাক্ষিক",
+            "অর্থনৈতিক"
+          ],
+          "correctAnswer": "দ্বিপাক্ষিক"
+        },
+        {
+          "question": "বাংলাদেশে মার্কিন ব্যবসায়ীদের জন্য সরকারি সহায়তা কী?",
+          "options": [
+            "কোন সহায়তা নেই",
+            "কর পরিত্যাগ",
+            "প্রশিক্ষণ",
+            "বিনিয়োগের সুযোগ"
+          ],
+          "correctAnswer": "বিনিয়োগের সুযোগ"
+        }
+      ]
+    },
+    {
+      "title": "GRE Synonym and Antonym",
+      "questions": [
+        {
+          "question": "The speaker's **invective** towards the opposition was met with a stunned silence.",
+          "options": [
+            "eloquence",
+            "praise",
+            "criticism",
+            "humor"
+          ],
+          "correctAnswer": "criticism"
+        },
+        {
+          "question": "The artist's **ephemeral** creations were meant to be enjoyed in the moment.",
+          "options": [
+            "lasting",
+            "grandiose",
+            "complex",
+            "temporary"
+          ],
+          "correctAnswer": "temporary"
+        },
+        {
+          "question": "The professor's **arcane** lecture left the students bewildered.",
+          "options": [
+            "engaging",
+            "accessible",
+            "obscure",
+            "informative"
+          ],
+          "correctAnswer": "obscure"
+        },
+        {
+          "question": "The **prolific** writer churned out novels at an astonishing pace.",
+          "options": [
+            "unproductive",
+            "modest",
+            "talented",
+            "fertile"
+          ],
+          "correctAnswer": "fertile"
+        },
+        {
+          "question": "The company's **tenuous** financial position was a cause for concern.",
+          "options": [
+            "solid",
+            "stable",
+            "precarious",
+            "strong"
+          ],
+          "correctAnswer": "precarious"
+        },
+        {
+          "question": "The **dogmatic** leader refused to consider any dissenting opinions.",
+          "options": [
+            "flexible",
+            "open-minded",
+            "opinionated",
+            "compromising"
+          ],
+          "correctAnswer": "opinionated"
+        },
+        {
+          "question": "The **labyrinthine** corridors of the old castle were confusing and disorienting.",
+          "options": [
+            "straight",
+            "simple",
+            "complex",
+            "accessible"
+          ],
+          "correctAnswer": "complex"
+        },
+        {
+          "question": "The **unassuming** hero never boasted about his deeds.",
+          "options": [
+            "proud",
+            "humble",
+            "brave",
+            "confident"
+          ],
+          "correctAnswer": "humble"
+        },
+        {
+          "question": "The **volatile** situation could erupt into violence at any moment.",
+          "options": [
+            "stable",
+            "calm",
+            "unpredictable",
+            "peaceful"
+          ],
+          "correctAnswer": "unpredictable"
+        },
+        {
+          "question": "The **avaricious** businessman was obsessed with accumulating wealth.",
+          "options": [
+            "generous",
+            "greedy",
+            "charitable",
+            "modest"
+          ],
+          "correctAnswer": "greedy"
+        },
+        {
+          "question": "The professor's lecture was **lucid** and easy to understand.",
+          "options": [
+            "obscure",
+            "confusing",
+            "complex",
+            "convoluted"
+          ],
+          "correctAnswer": "confusing"
+        },
+        {
+          "question": "The politician's speech was full of **bombast** and empty promises.",
+          "options": [
+            "humility",
+            "sincerity",
+            "modesty",
+            "simplicity"
+          ],
+          "correctAnswer": "humility"
+        },
+        {
+          "question": "The artist's work was **ephemeral**, lasting only a short time.",
+          "options": [
+            "permanent",
+            "enduring",
+            "eternal",
+            "lasting"
+          ],
+          "correctAnswer": "permanent"
+        },
+        {
+          "question": "The detective's investigation was **meticulous** and thorough.",
+          "options": [
+            "careless",
+            "haphazard",
+            "sloppy",
+            "superficial"
+          ],
+          "correctAnswer": "careless"
+        },
+        {
+          "question": "The author's writing style was **terse** and to the point.",
+          "options": [
+            "verbose",
+            "rambling",
+            "wordy",
+            "prolix"
+          ],
+          "correctAnswer": "verbose"
+        },
+        {
+          "question": "The lawyer's arguments were **cogent** and persuasive.",
+          "options": [
+            "weak",
+            "fallacious",
+            "unconvincing",
+            "irrelevant"
+          ],
+          "correctAnswer": "weak"
+        },
+        {
+          "question": "The company's financial reports were **opaque**, making it difficult to understand their performance.",
+          "options": [
+            "transparent",
+            "clear",
+            "lucid",
+            "intelligible"
+          ],
+          "correctAnswer": "transparent"
+        },
+        {
+          "question": "The scientist's research was **groundbreaking** and revolutionary.",
+          "options": [
+            "conventional",
+            "ordinary",
+            "unoriginal",
+            "derivative"
+          ],
+          "correctAnswer": "conventional"
+        },
+        {
+          "question": "The child's behavior was **capricious**, changing unpredictably.",
+          "options": [
+            "consistent",
+            "predictable",
+            "reliable",
+            "stable"
+          ],
+          "correctAnswer": "consistent"
+        },
+        {
+          "question": "The painting was **austere** in its design, lacking any unnecessary ornamentation.",
+          "options": [
+            "ornate",
+            "elaborate",
+            "exuberant",
+            "decorative"
+          ],
+          "correctAnswer": "ornate"
+        },
+        {
+          "question": "The evidence presented in court was **circumstantial**, suggesting but not proving guilt.",
+          "options": [
+            "direct",
+            "conclusive",
+            "definitive",
+            "irrefutable"
+          ],
+          "correctAnswer": "direct"
+        },
+        {
+          "question": "The team's performance was **lackluster**, failing to meet expectations.",
+          "options": [
+            "brilliant",
+            "outstanding",
+            "exemplary",
+            "spectacular"
+          ],
+          "correctAnswer": "brilliant"
+        },
+        {
+          "question": "The diplomat's remarks were **candid**, expressing his honest opinions.",
+          "options": [
+            "diplomatic",
+            "tactful",
+            "insincere",
+            "evasive"
+          ],
+          "correctAnswer": "diplomatic"
+        },
+        {
+          "question": "The writer's novel was **derivative**, borrowing heavily from other works.",
+          "options": [
+            "original",
+            "innovative",
+            "inventive",
+            "creative"
+          ],
+          "correctAnswer": "original"
+        },
+        {
+          "question": "The speaker's tone was **condescending**, implying superiority to the audience.",
+          "options": [
+            "respectful",
+            "humble",
+            "polite",
+            "courteous"
+          ],
+          "correctAnswer": "respectful"
+        },
+        {
+          "question": "The politician's campaign was **flagrant**, disregarding ethical boundaries.",
+          "options": [
+            "ethical",
+            "moral",
+            "principled",
+            "honorable"
+          ],
+          "correctAnswer": "ethical"
+        },
+        {
+          "question": "The scientist's theory was **speculative**, based on limited evidence.",
+          "options": [
+            "proven",
+            "confirmed",
+            "verified",
+            "established"
+          ],
+          "correctAnswer": "proven"
+        },
+        {
+          "question": "The company's decision was **arbitrary**, lacking a clear rationale.",
+          "options": [
+            "rational",
+            "logical",
+            "justified",
+            "reasonable"
+          ],
+          "correctAnswer": "rational"
+        }
+      ]
+    },
+    {
+      "title": "GRE Word Meaning",
+      "questions": [
+        {
+          "question": "The scientist's research was **meticulous**, taking years of careful observation and analysis.",
+          "options": [
+            "sloppy",
+            "thorough",
+            "superficial",
+            "random"
+          ],
+          "correctAnswer": "thorough"
+        },
+        {
+          "question": "The speaker's **eloquent** words captivated the audience.",
+          "options": [
+            "boring",
+            "confused",
+            "fluent",
+            "unintelligible"
+          ],
+          "correctAnswer": "fluent"
+        },
+        {
+          "question": "The politician's speech was filled with **bombast** and empty promises.",
+          "options": [
+            "humor",
+            "sincerity",
+            "humility",
+            "grandiose language"
+          ],
+          "correctAnswer": "grandiose language"
+        },
+        {
+          "question": "The artist's work was **avant-garde**, challenging traditional notions of beauty.",
+          "options": [
+            "conventional",
+            "classical",
+            "experimental",
+            "realistic"
+          ],
+          "correctAnswer": "experimental"
+        },
+        {
+          "question": "The team's **tenacity** allowed them to overcome the obstacles and win the championship.",
+          "options": [
+            "laziness",
+            "weakness",
+            "determination",
+            "discouragement"
+          ],
+          "correctAnswer": "determination"
+        },
+        {
+          "question": "The article presented a **concise** summary of the complex issue.",
+          "options": [
+            "detailed",
+            "brief",
+            "vague",
+            "biased"
+          ],
+          "correctAnswer": "brief"
+        },
+        {
+          "question": "The author's writing style was **prolix**, using excessive and unnecessary words.",
+          "options": [
+            "clear",
+            "concise",
+            "verbose",
+            "simple"
+          ],
+          "correctAnswer": "verbose"
+        },
+        {
+          "question": "The company's **mercurial** stock price fluctuated wildly.",
+          "options": [
+            "stable",
+            "predictable",
+            "volatile",
+            "consistent"
+          ],
+          "correctAnswer": "volatile"
+        },
+        {
+          "question": "The detective's **astute** observations led him to solve the mystery.",
+          "options": [
+            "careless",
+            "unobservant",
+            "sharp",
+            "unintelligent"
+          ],
+          "correctAnswer": "sharp"
+        },
+        {
+          "question": "The philosopher's ideas were **ephemeral**, fading quickly from memory.",
+          "options": [
+            "lasting",
+            "short-lived",
+            "original",
+            "complex"
+          ],
+          "correctAnswer": "short-lived"
+        },
+        {
+          "question": "The scientist's **hypothesis** was based on years of research.",
+          "options": [
+            "conclusion",
+            "theory",
+            "observation",
+            "proof"
+          ],
+          "correctAnswer": "theory"
+        },
+        {
+          "question": "The artist's work was filled with **symbolism**, each element representing a deeper meaning.",
+          "options": [
+            "realism",
+            "abstraction",
+            "literalism",
+            "figurative meaning"
+          ],
+          "correctAnswer": "figurative meaning"
+        },
+        {
+          "question": "The politician's speech was filled with **rhetorical** flourishes, designed to appeal to the audience.",
+          "options": [
+            "factual",
+            "logical",
+            "persuasive",
+            "unimportant"
+          ],
+          "correctAnswer": "persuasive"
+        },
+        {
+          "question": "The author's **sardonic** humor was often biting and cynical.",
+          "options": [
+            "gentle",
+            "optimistic",
+            "mocking",
+            "sentimental"
+          ],
+          "correctAnswer": "mocking"
+        },
+        {
+          "question": "The company's **audacious** marketing campaign was a risky but ultimately successful move.",
+          "options": [
+            "cautious",
+            "bold",
+            "conventional",
+            "unoriginal"
+          ],
+          "correctAnswer": "bold"
+        }
+      ]
+    },
+    {
+      "title": "GRE VOCAB",
+      "questions": [
+        {
+          "question": "The senator's speech was **turgid**, filled with clichés and empty promises.",
+          "options": [
+            "eloquent",
+            "concise",
+            "bombastic",
+            "humorous"
+          ],
+          "correctAnswer": "bombastic"
+        },
+        {
+          "question": "The scientist's research was **meticulous**, with every detail carefully considered.",
+          "options": [
+            "sloppy",
+            "superficial",
+            "thorough",
+            "haphazard"
+          ],
+          "correctAnswer": "thorough"
+        },
+        {
+          "question": "The company's **profligate** spending habits led to its eventual bankruptcy.",
+          "options": [
+            "frugal",
+            "thrifty",
+            "wasteful",
+            "careful"
+          ],
+          "correctAnswer": "wasteful"
+        },
+        {
+          "question": "The artist's work was **enigmatic**, full of hidden meanings and symbols.",
+          "options": [
+            "clear",
+            "obvious",
+            "puzzling",
+            "realistic"
+          ],
+          "correctAnswer": "puzzling"
+        },
+        {
+          "question": "The author's **prolific** output included novels, plays, and poetry.",
+          "options": [
+            "limited",
+            "sparse",
+            "abundant",
+            "mediocre"
+          ],
+          "correctAnswer": "abundant"
+        },
+        {
+          "question": "The politician's **flippant** remarks about the crisis were met with outrage.",
+          "options": [
+            "serious",
+            "thoughtful",
+            "disrespectful",
+            "humorous"
+          ],
+          "correctAnswer": "disrespectful"
+        },
+        {
+          "question": "The **ephemeral** beauty of the cherry blossoms was a reminder of the fleeting nature of life.",
+          "options": [
+            "permanent",
+            "lasting",
+            "temporary",
+            "unimportant"
+          ],
+          "correctAnswer": "temporary"
+        },
+        {
+          "question": "The company's **audacious** marketing campaign shocked and surprised everyone.",
+          "options": [
+            "timid",
+            "cautious",
+            "bold",
+            "conservative"
+          ],
+          "correctAnswer": "bold"
+        },
+        {
+          "question": "The detective's **astute** observations helped him solve the complex case.",
+          "options": [
+            "clueless",
+            "naive",
+            "sharp",
+            "slow"
+          ],
+          "correctAnswer": "sharp"
+        },
+        {
+          "question": "The museum's **eclectic** collection included ancient artifacts, modern sculptures, and Renaissance paintings.",
+          "options": [
+            "organized",
+            "uniform",
+            "diverse",
+            "boring"
+          ],
+          "correctAnswer": "diverse"
+        },
+        {
+          "question": "The student's **insolent** behavior towards the teacher was unacceptable.",
+          "options": [
+            "respectful",
+            "polite",
+            "disrespectful",
+            "humble"
+          ],
+          "correctAnswer": "disrespectful"
+        },
+        {
+          "question": "The professor's **erudite** lecture covered a wide range of complex topics.",
+          "options": [
+            "uninformed",
+            "ignorant",
+            "knowledgeable",
+            "superficial"
+          ],
+          "correctAnswer": "knowledgeable"
+        },
+        {
+          "question": "The company's **laissez-faire** management style allowed employees a great deal of autonomy.",
+          "options": [
+            "strict",
+            "controlling",
+            "hands-off",
+            "authoritarian"
+          ],
+          "correctAnswer": "hands-off"
+        },
+        {
+          "question": "The musician's **mellifluous** voice captivated the audience.",
+          "options": [
+            "harsh",
+            "raspy",
+            "sweet",
+            "dissonant"
+          ],
+          "correctAnswer": "sweet"
+        },
+        {
+          "question": "The scientist's **unorthodox** approach to research yielded surprising results.",
+          "options": [
+            "conventional",
+            "traditional",
+            "unconventional",
+            "ordinary"
+          ],
+          "correctAnswer": "unconventional"
+        },
+        {
+          "question": "The government's **arbitrary** decision to raise taxes angered many citizens.",
+          "options": [
+            "fair",
+            "just",
+            "random",
+            "logical"
+          ],
+          "correctAnswer": "random"
+        },
+        {
+          "question": "The author's **verbose** writing style often made it difficult to follow the plot.",
+          "options": [
+            "concise",
+            "succinct",
+            "wordy",
+            "simple"
+          ],
+          "correctAnswer": "wordy"
+        },
+        {
+          "question": "The artist's **whimsical** paintings were filled with fantastical creatures and surreal landscapes.",
+          "options": [
+            "realistic",
+            "ordinary",
+            "serious",
+            "fanciful"
+          ],
+          "correctAnswer": "fanciful"
+        },
+        {
+          "question": "The company's **tenuous** financial position made it vulnerable to any economic downturn.",
+          "options": [
+            "strong",
+            "stable",
+            "weak",
+            "secure"
+          ],
+          "correctAnswer": "weak"
+        }
+      ]
+    },
+    {
+      "title": "Vocabulary Test",
+      "questions": [
+        {
+          "question": "What is the meaning of the word 'ephemeral'?",
+          "options": [
+            "lasting forever",
+            "short-lived",
+            "powerful",
+            "unimportant"
+          ],
+          "correctAnswer": "short-lived"
+        },
+        {
+          "question": "Which word is a synonym for 'serene'?",
+          "options": [
+            "turbulent",
+            "peaceful",
+            "anxious",
+            "confused"
+          ],
+          "correctAnswer": "peaceful"
+        },
+        {
+          "question": "What does the word 'audacious' mean?",
+          "options": [
+            "timid",
+            "brave",
+            "careful",
+            "dishonest"
+          ],
+          "correctAnswer": "brave"
+        },
+        {
+          "question": "Which word is an antonym for 'concise'?",
+          "options": [
+            "brief",
+            "succinct",
+            "verbose",
+            "clear"
+          ],
+          "correctAnswer": "verbose"
+        },
+        {
+          "question": "What does the word 'disparage' mean?",
+          "options": [
+            "praise",
+            "criticize",
+            "ignore",
+            "encourage"
+          ],
+          "correctAnswer": "criticize"
+        },
+        {
+          "question": "Which word is a synonym for 'meticulous'?",
+          "options": [
+            "careless",
+            "sloppy",
+            "thorough",
+            "lazy"
+          ],
+          "correctAnswer": "thorough"
+        },
+        {
+          "question": "What does the word 'elusive' mean?",
+          "options": [
+            "easy to find",
+            "hard to catch",
+            "attractive",
+            "expensive"
+          ],
+          "correctAnswer": "hard to catch"
+        },
+        {
+          "question": "Which word is an antonym for 'optimistic'?",
+          "options": [
+            "pessimistic",
+            "hopeful",
+            "positive",
+            "enthusiastic"
+          ],
+          "correctAnswer": "pessimistic"
+        },
+        {
+          "question": "What does the word 'exuberant' mean?",
+          "options": [
+            "calm",
+            "joyful",
+            "sad",
+            "angry"
+          ],
+          "correctAnswer": "joyful"
+        },
+        {
+          "question": "Which word is a synonym for 'perplexed'?",
+          "options": [
+            "confused",
+            "excited",
+            "calm",
+            "confident"
+          ],
+          "correctAnswer": "confused"
+        },
+        {
+          "question": "What does the word 'reticent' mean?",
+          "options": [
+            "talkative",
+            "shy",
+            "angry",
+            "happy"
+          ],
+          "correctAnswer": "shy"
+        },
+        {
+          "question": "Which word is an antonym for 'benevolent'?",
+          "options": [
+            "kind",
+            "cruel",
+            "generous",
+            "caring"
+          ],
+          "correctAnswer": "cruel"
+        },
+        {
+          "question": "What does the word 'unanimous' mean?",
+          "options": [
+            "divided",
+            "agreed",
+            "uncertain",
+            "disputed"
+          ],
+          "correctAnswer": "agreed"
+        },
+        {
+          "question": "Which word is a synonym for 'arduous'?",
+          "options": [
+            "easy",
+            "difficult",
+            "interesting",
+            "boring"
+          ],
+          "correctAnswer": "difficult"
+        },
+        {
+          "question": "What does the word 'intrepid' mean?",
+          "options": [
+            "fearful",
+            "brave",
+            "weak",
+            "discouraged"
+          ],
+          "correctAnswer": "brave"
+        },
+        {
+          "question": "Which word is an antonym for 'malleable'?",
+          "options": [
+            "flexible",
+            "rigid",
+            "soft",
+            "bendable"
+          ],
+          "correctAnswer": "rigid"
+        },
+        {
+          "question": "What does the word 'prolific' mean?",
+          "options": [
+            "lazy",
+            "productive",
+            "uninspired",
+            "uncreative"
+          ],
+          "correctAnswer": "productive"
+        },
+        {
+          "question": "Which word is a synonym for 'cautious'?",
+          "options": [
+            "careless",
+            "reckless",
+            "careful",
+            "bold"
+          ],
+          "correctAnswer": "careful"
+        },
+        {
+          "question": "Which word means the opposite of 'benevolent'?",
+          "options": [
+            "Malevolent",
+            "Beneficial",
+            "Generous",
+            "Kind"
+          ],
+          "correctAnswer": "Malevolent"
+        },
+        {
+          "question": "What is the meaning of 'elucidate'?",
+          "options": [
+            "To confuse",
+            "To destroy",
+            "To explain",
+            "To ignore"
+          ],
+          "correctAnswer": "To explain"
+        },
+        {
+          "question": "Which word is a synonym for 'concise'?",
+          "options": [
+            "Verbose",
+            "Rambling",
+            "Brief",
+            "Detailed"
+          ],
+          "correctAnswer": "Brief"
+        },
+        {
+          "question": "What does 'incessant' mean?",
+          "options": [
+            "Continuous",
+            "Intermittent",
+            "Occasional",
+            "Rare"
+          ],
+          "correctAnswer": "Continuous"
+        },
+        {
+          "question": "Which word is an antonym for 'malleable'?",
+          "options": [
+            "Flexible",
+            "Rigid",
+            "Soft",
+            "Pliable"
+          ],
+          "correctAnswer": "Rigid"
+        },
+        {
+          "question": "What does 'ubiquitous' mean?",
+          "options": [
+            "Rare",
+            "Unusual",
+            "Everywhere",
+            "Nowhere"
+          ],
+          "correctAnswer": "Everywhere"
+        },
+        {
+          "question": "Which word is a synonym for 'transient'?",
+          "options": [
+            "Permanent",
+            "Temporary",
+            "Eternal",
+            "Stable"
+          ],
+          "correctAnswer": "Temporary"
+        },
+        {
+          "question": "What does 'reticent' mean?",
+          "options": [
+            "Talkative",
+            "Quiet",
+            "Angry",
+            "Happy"
+          ],
+          "correctAnswer": "Quiet"
+        },
+        {
+          "question": "Which word is an antonym for 'audacious'?",
+          "options": [
+            "Bold",
+            "Fearless",
+            "Timid",
+            "Brave"
+          ],
+          "correctAnswer": "Timid"
+        },
+        {
+          "question": "What does 'capitulate' mean?",
+          "options": [
+            "To surrender",
+            "To attack",
+            "To defend",
+            "To win"
+          ],
+          "correctAnswer": "To surrender"
+        },
+        {
+          "question": "Which word is a synonym for 'ambiguous'?",
+          "options": [
+            "Clear",
+            "Precise",
+            "Vague",
+            "Specific"
+          ],
+          "correctAnswer": "Vague"
+        },
+        {
+          "question": "What does 'dilemma' mean?",
+          "options": [
+            "Choice",
+            "Problem",
+            "Solution",
+            "Opportunity"
+          ],
+          "correctAnswer": "Problem"
+        },
+        {
+          "question": "Which word is an antonym for 'prolific'?",
+          "options": [
+            "Productive",
+            "Fruitful",
+            "Unproductive",
+            "Successful"
+          ],
+          "correctAnswer": "Unproductive"
+        },
+        {
+          "question": "What does 'exacerbate' mean?",
+          "options": [
+            "To improve",
+            "To worsen",
+            "To ignore",
+            "To solve"
+          ],
+          "correctAnswer": "To worsen"
+        },
+        {
+          "question": "Which word is a synonym for 'ostracize'?",
+          "options": [
+            "To include",
+            "To welcome",
+            "To exclude",
+            "To accept"
+          ],
+          "correctAnswer": "To exclude"
+        },
+        {
+          "question": "What does 'convivial' mean?",
+          "options": [
+            "Serious",
+            "Quiet",
+            "Friendly",
+            "Angry"
+          ],
+          "correctAnswer": "Friendly"
+        },
+        {
+          "question": "Which word is an antonym for 'assiduous'?",
+          "options": [
+            "Hardworking",
+            "Diligent",
+            "Lazy",
+            "Energetic"
+          ],
+          "correctAnswer": "Lazy"
+        },
+        {
+          "question": "What does 'intangible' mean?",
+          "options": [
+            "Visible",
+            "Touchable",
+            "Real",
+            "Abstract"
+          ],
+          "correctAnswer": "Abstract"
+        },
+        {
+          "question": "Which word is a synonym for 'serendipitous'?",
+          "options": [
+            "Lucky",
+            "Unfortunate",
+            "Planned",
+            "Expected"
+          ],
+          "correctAnswer": "Lucky"
+        },
+        {
+          "question": "What does 'ephemeral' mean?",
+          "options": [
+            "Permanent",
+            "Short-lived",
+            "Long-lasting",
+            "Everlasting"
+          ],
+          "correctAnswer": "Short-lived"
+        },
+        {
+          "question": "Which word is an antonym for 'disparage'?",
+          "options": [
+            "To criticize",
+            "To praise",
+            "To ignore",
+            "To insult"
+          ],
+          "correctAnswer": "To praise"
+        },
+        {
+          "question": "What does 'inscrutable' mean?",
+          "options": [
+            "Clear",
+            "Understandable",
+            "Mysterious",
+            "Simple"
+          ],
+          "correctAnswer": "Mysterious"
+        },
+        {
+          "question": "Which word is a synonym for 'prevaricate'?",
+          "options": [
+            "To tell the truth",
+            "To lie",
+            "To explain",
+            "To confess"
+          ],
+          "correctAnswer": "To lie"
+        }
+      ]
+    },
+    {
+      "title": "মুঘল শাসনামল",
+      "questions": [
+        {
+          "question": "Which Mughal emperor's reign saw the construction of the Taj Mahal?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Shah Jahan"
+        },
+        {
+          "question": "Which Mughal emperor implemented the Din-i-Ilahi, a syncretic religion?",
+          "options": [
+            "Babur",
+            "Humayun",
+            "Akbar",
+            "Jahangir"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "Which Mughal emperor is considered the greatest military commander of the dynasty?",
+          "options": [
+            "Babur",
+            "Humayun",
+            "Akbar",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Aurangzeb"
+        },
+        {
+          "question": "Which Mughal emperor introduced the Mansabdari system?",
+          "options": [
+            "Babur",
+            "Humayun",
+            "Akbar",
+            "Jahangir"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "The Mughal Empire reached its peak of territorial expansion under which emperor?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Aurangzeb"
+        },
+        {
+          "question": "What was the primary reason for the decline of the Mughal Empire?",
+          "options": [
+            "Lack of competent rulers",
+            "Internal rebellions and conflicts",
+            "Rise of European powers",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "Which Mughal emperor was known for his patronage of arts and culture?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Jahangir"
+        },
+        {
+          "question": "Which Mughal emperor faced a rebellion by his son, Dara Shikoh?",
+          "options": [
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb",
+            "Muhammad Shah"
+          ],
+          "correctAnswer": "Shah Jahan"
+        },
+        {
+          "question": "Which Mughal emperor's reign witnessed the construction of the Red Fort in Delhi?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Shah Jahan"
+        },
+        {
+          "question": "What was the main purpose of the Jizya tax imposed by the Mughals?",
+          "options": [
+            "To fund the military",
+            "To discriminate against non-Muslims",
+            "To encourage conversion to Islam",
+            "To control the economy"
+          ],
+          "correctAnswer": "To discriminate against non-Muslims"
+        },
+        {
+          "question": "Which Mughal emperor was defeated by the Maratha king Shivaji?",
+          "options": [
+            "Shah Jahan",
+            "Aurangzeb",
+            "Muhammad Shah",
+            "Farrukhsiyar"
+          ],
+          "correctAnswer": "Aurangzeb"
+        },
+        {
+          "question": "Which Mughal emperor is considered to have been the most tolerant towards other religions?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "What was the Zabti system implemented by the Mughals?",
+          "options": [
+            "A land revenue system based on actual yield",
+            "A system of taxation based on religious affiliation",
+            "A military recruitment system",
+            "A system of administrative courts"
+          ],
+          "correctAnswer": "A land revenue system based on actual yield"
+        },
+        {
+          "question": "Which Mughal emperor faced the first major challenge from the British East India Company?",
+          "options": [
+            "Aurangzeb",
+            "Muhammad Shah",
+            "Farrukhsiyar",
+            "Alamgir II"
+          ],
+          "correctAnswer": "Farrukhsiyar"
+        },
+        {
+          "question": "The Mughal Empire was finally brought to an end by which event?",
+          "options": [
+            "The Battle of Plassey",
+            "The Sepoy Mutiny of 1857",
+            "The British annexation of Awadh",
+            "The decline of Mughal power in the 18th century"
+          ],
+          "correctAnswer": "The Sepoy Mutiny of 1857"
+        },
+        {
+          "question": "What was the significance of the Battle of Panipat in 1526?",
+          "options": [
+            "It marked the beginning of the Mughal Empire in India",
+            "It led to the decline of the Mughal Empire",
+            "It established Mughal dominance over the Marathas",
+            "It resulted in the defeat of the Portuguese in India"
+          ],
+          "correctAnswer": "It marked the beginning of the Mughal Empire in India"
+        },
+        {
+          "question": "Which Mughal emperor commissioned the construction of the Jama Masjid in Delhi?",
+          "options": [
+            "Shah Jahan",
+            "Aurangzeb",
+            "Muhammad Shah",
+            "Alamgir II"
+          ],
+          "correctAnswer": "Shah Jahan"
+        },
+        {
+          "question": "What was the role of the Diwan in the Mughal administrative system?",
+          "options": [
+            "The head of the military",
+            "The chief minister responsible for finance",
+            "The highest religious authority",
+            "The head of the judiciary"
+          ],
+          "correctAnswer": "The chief minister responsible for finance"
+        },
+        {
+          "question": "Which Mughal emperor was known for his love of music and poetry?",
+          "options": [
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb",
+            "Muhammad Shah"
+          ],
+          "correctAnswer": "Jahangir"
+        },
+        {
+          "question": "Which Mughal emperor's tomb is located in Lahore, Pakistan?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Jahangir"
+        },
+        {
+          "question": "What was the significance of the Mughal Empire in the context of Indian history?",
+          "options": [
+            "It consolidated a large empire and introduced a new political order",
+            "It promoted cultural exchange and artistic flourishing",
+            "It played a significant role in the development of trade and commerce",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "Which Mughal emperor faced a revolt by the Satnami sect?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Aurangzeb"
+        },
+        {
+          "question": "Which Mughal emperor was known for his religious tolerance and inclusiveness?",
+          "options": [
+            "Babur",
+            "Humayun",
+            "Akbar",
+            "Jahangir"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "What was the significance of the Mughal court in the cultural history of India?",
+          "options": [
+            "It was a center of patronage for artists, scholars, and musicians",
+            "It promoted the development of Persian language and literature",
+            "It fostered a blend of Indian and Persian traditions",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "Which Mughal emperor was defeated by the Afghan king Nadir Shah?",
+          "options": [
+            "Muhammad Shah",
+            "Alamgir II",
+            "Shah Alam II",
+            "Akbar Shah II"
+          ],
+          "correctAnswer": "Muhammad Shah"
+        },
+        {
+          "question": "Which Mughal emperor was responsible for the construction of the Taj Mahal?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Shah Jahan"
+        },
+        {
+          "question": "What was the primary reason for the decline of the Mughal Empire?",
+          "options": [
+            "Lack of competent rulers",
+            "Internal conflicts",
+            "Foreign invasions",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "Which Mughal emperor implemented the policy of 'Sulh-i-Kul' (peace with all)?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "Who was the first Mughal emperor to embrace Hinduism?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "What was the significance of the Battle of Plassey in the context of the Mughal Empire?",
+          "options": [
+            "It marked the beginning of the British East India Company's dominance",
+            "It led to the decline of the Mughal Empire",
+            "It resulted in the loss of Bengal to the British",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "What was the 'Din-i-Ilahi'?",
+          "options": [
+            "A new religion founded by Akbar",
+            "A syncretic religion that combined elements of Islam and Hinduism",
+            "A set of ethical principles for a just society",
+            "A form of religious tolerance"
+          ],
+          "correctAnswer": "A new religion founded by Akbar"
+        },
+        {
+          "question": "Which Mughal emperor is known for his patronage of art and architecture, especially the Red Fort in Delhi?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Shah Jahan"
+        },
+        {
+          "question": "Who was the Mughal emperor during the reign of the British East India Company's first Governor-General, Warren Hastings?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Shah Alam II"
+          ],
+          "correctAnswer": "Shah Alam II"
+        },
+        {
+          "question": "What was the significance of the Mughal court in the cultural landscape of India?",
+          "options": [
+            "It fostered a flourishing of art, literature, and architecture",
+            "It promoted religious tolerance and cultural exchange",
+            "It played a crucial role in the development of Indo-Persian art and literature",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "Which Mughal emperor's reign saw the greatest expansion of the empire's territory?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Aurangzeb"
+        },
+        {
+          "question": "What were the 'Mansabdars' in the Mughal administration?",
+          "options": [
+            "Military officers",
+            "Civil servants",
+            "Tax collectors",
+            "Religious scholars"
+          ],
+          "correctAnswer": "Military officers"
+        },
+        {
+          "question": "How did the Mughal Empire influence the development of trade and commerce in India?",
+          "options": [
+            "It promoted trade routes and facilitated the flow of goods",
+            "It established a stable and secure environment for trade",
+            "It fostered economic growth and prosperity",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "Which Mughal emperor is known for his love of music and literature?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Jahangir"
+        },
+        {
+          "question": "What was the impact of the Mughal Empire on the development of architecture in India?",
+          "options": [
+            "It introduced a distinct Indo-Islamic architectural style",
+            "It built magnificent palaces, mosques, and gardens",
+            "It influenced the development of regional architectural styles",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "What was the 'Zabiti' system of revenue collection introduced by the Mughal emperors?",
+          "options": [
+            "A fixed land revenue system based on actual produce",
+            "A revenue system based on land measurement",
+            "A system of tax collection from merchants and traders",
+            "A system of revenue collection from artisans and craftsmen"
+          ],
+          "correctAnswer": "A fixed land revenue system based on actual produce"
+        },
+        {
+          "question": "Which Mughal emperor's reign witnessed the rise of the Maratha Empire?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Aurangzeb"
+        },
+        {
+          "question": "What was the significance of the 'Jizya' tax in the Mughal Empire?",
+          "options": [
+            "It was a tax levied on non-Muslims",
+            "It was a source of revenue for the Mughal government",
+            "It was a symbol of religious discrimination",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "Who was the author of the 'Ain-i-Akbari', a comprehensive account of the Mughal Empire during Akbar's reign?",
+          "options": [
+            "Abul Fazl",
+            "Faizi",
+            "Birbal",
+            "Mulla Do Piaza"
+          ],
+          "correctAnswer": "Abul Fazl"
+        },
+        {
+          "question": "What were the 'Jagirs' in the Mughal administrative system?",
+          "options": [
+            "Land grants given to military officers",
+            "Tax-free lands",
+            "Royal estates",
+            "Religious endowments"
+          ],
+          "correctAnswer": "Land grants given to military officers"
+        },
+        {
+          "question": "How did the Mughal Empire contribute to the development of art and literature in India?",
+          "options": [
+            "It encouraged the development of a unique Indo-Persian style",
+            "It patronized artists and scholars",
+            "It facilitated the translation and dissemination of knowledge",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        },
+        {
+          "question": "What was the role of the 'Diwan' in the Mughal administration?",
+          "options": [
+            "Head of the revenue department",
+            "Chief advisor to the emperor",
+            "Commander-in-chief of the army",
+            "Head of the judiciary"
+          ],
+          "correctAnswer": "Head of the revenue department"
+        },
+        {
+          "question": "Which Mughal emperor is credited with establishing a strong central government and promoting unity and stability in the empire?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "What was the impact of the Mughal Empire on the social and cultural landscape of India?",
+          "options": [
+            "It promoted religious tolerance and cultural exchange",
+            "It influenced the development of languages, literature, and art",
+            "It played a significant role in the formation of a composite Indian culture",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above"
+        }
+      ]
+    },
+    {
+      "title": "মুঘল শাসনামলের ইতিহাস",
+      "questions": [
+        {
+          "question": "Which Mughal emperor is credited with introducing the concept of 'mansabdari' system?",
+          "options": [
+            "Babur",
+            "Humayun",
+            "Akbar",
+            "Jahangir"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "Which Mughal emperor commissioned the construction of the Taj Mahal?",
+          "options": [
+            "Shah Jahan",
+            "Aurangzeb",
+            "Jahangir",
+            "Akbar"
+          ],
+          "correctAnswer": "Shah Jahan"
+        },
+        {
+          "question": "The Mughal emperor who was known for his religious tolerance and promoted a policy of 'Sulh-i-Kul' (Peace with all) was:",
+          "options": [
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb",
+            "Akbar"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "Which Mughal emperor introduced the 'Jizya' tax on non-Muslims?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Aurangzeb"
+        },
+        {
+          "question": "The Mughal emperor who faced a major rebellion led by Shivaji Maharaj was:",
+          "options": [
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb",
+            "Akbar"
+          ],
+          "correctAnswer": "Aurangzeb"
+        },
+        {
+          "question": "Which Mughal emperor is credited with the introduction of the 'Din-i-Ilahi' (Divine Faith)?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "The famous Mughal painter who was commissioned by Jahangir to paint a portrait of the emperor with his favorite parrot was:",
+          "options": [
+            "Abul Fazl",
+            "Ustad Mansur",
+            "Mirza Ghias Beg",
+            "Sa'adat Khan"
+          ],
+          "correctAnswer": "Ustad Mansur"
+        },
+        {
+          "question": "Which Mughal emperor's reign saw the construction of the Jama Masjid in Delhi?",
+          "options": [
+            "Shah Jahan",
+            "Aurangzeb",
+            "Jahangir",
+            "Akbar"
+          ],
+          "correctAnswer": "Shah Jahan"
+        },
+        {
+          "question": "The Mughal emperor who was defeated by the Persian ruler Nadir Shah was:",
+          "options": [
+            "Aurangzeb",
+            "Muhammad Shah",
+            "Shah Jahan",
+            "Akbar"
+          ],
+          "correctAnswer": "Muhammad Shah"
+        },
+        {
+          "question": "Which Mughal emperor implemented a policy of suppressing Hindu religious practices and promoting Islamic dominance?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Aurangzeb"
+        },
+        {
+          "question": "The Mughal emperor who was known for his patronage of arts and architecture, and whose reign saw the construction of the Red Fort in Delhi was:",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Shah Jahan"
+        },
+        {
+          "question": "Which Mughal emperor is considered the most powerful and influential ruler of the Mughal dynasty?",
+          "options": [
+            "Babur",
+            "Humayun",
+            "Akbar",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "The Mughal emperor who was overthrown by his own son, Aurangzeb, was:",
+          "options": [
+            "Shah Jahan",
+            "Jahangir",
+            "Akbar",
+            "Humayun"
+          ],
+          "correctAnswer": "Shah Jahan"
+        },
+        {
+          "question": "The Mughal emperor who faced a rebellion by his own son, Dara Shikoh, was:",
+          "options": [
+            "Jahangir",
+            "Aurangzeb",
+            "Shah Jahan",
+            "Akbar"
+          ],
+          "correctAnswer": "Aurangzeb"
+        },
+        {
+          "question": "Which Mughal emperor is credited with the compilation of the 'Ain-i-Akbari' (Administrative Regulations of Akbar)?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "The Mughal emperor who expanded the empire to its greatest extent and conquered territories in present-day Afghanistan and Balochistan was:",
+          "options": [
+            "Aurangzeb",
+            "Shah Jahan",
+            "Jahangir",
+            "Akbar"
+          ],
+          "correctAnswer": "Aurangzeb"
+        },
+        {
+          "question": "Which Mughal emperor introduced the 'Zabti' land revenue system?",
+          "options": [
+            "Akbar",
+            "Jahangir",
+            "Shah Jahan",
+            "Aurangzeb"
+          ],
+          "correctAnswer": "Akbar"
+        },
+        {
+          "question": "The Mughal emperor who was defeated by the British East India Company in the Battle of Plassey was:",
+          "options": [
+            "Aurangzeb",
+            "Muhammad Shah",
+            "Shah Alam II",
+            "Akbar"
+          ],
+          "correctAnswer": "Shah Alam II"
+        },
+        {
+          "question": "Which Mughal emperor faced the invasion of Nadir Shah and witnessed the sacking of Delhi in 1739?",
+          "options": [
+            "Shah Jahan",
+            "Aurangzeb",
+            "Muhammad Shah",
+            "Akbar"
+          ],
+          "correctAnswer": "Muhammad Shah"
         }
       ]
     }

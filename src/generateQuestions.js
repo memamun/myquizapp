@@ -7,12 +7,13 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 async function generateQuestions(topic, numberOfQuestions) {
-  const prompt = `Generate ${numberOfQuestions} multiple-choice questions about ${topic}. Each question should have 4 options and one correct answer. Format the output as a JSON array of objects, where each object has the following structure:
+  const prompt = `Generate ${numberOfQuestions} multiple-choice questions about ${topic}. Each question should have 4 options and one correct answer.Format the output as a JSON array of objects, where each object has the following structure:
   {
     "question": "The question text",
     "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
     "correctAnswer": "The correct option"
-  }`;
+  }
+  `
 
   try {
     const result = await model.generateContent(prompt);
@@ -24,7 +25,9 @@ async function generateQuestions(topic, numberOfQuestions) {
     if (jsonMatch && jsonMatch[1]) {
       const jsonContent = jsonMatch[1].trim();
       const generatedQuestions = JSON.parse(jsonContent);
-      return generatedQuestions;
+      
+      // Ensure we return only the requested number of questions
+      return generatedQuestions.slice(0, numberOfQuestions);
     } else {
       throw new Error('Unable to extract valid JSON from the AI response');
     }
