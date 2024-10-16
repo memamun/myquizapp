@@ -796,6 +796,56 @@
             "Affable"
           ],
           "correctAnswer": "Arrogant"
+        },
+        {
+          "question": "The professor's lecture was so **abstruse** that most students left confused.",
+          "options": [
+            "clear and concise",
+            "difficult to understand",
+            "short and to the point",
+            "interesting and engaging"
+          ],
+          "correctAnswer": "difficult to understand"
+        },
+        {
+          "question": "The politician's **bombastic** speech was filled with exaggerated claims and inflammatory rhetoric.",
+          "options": [
+            "humble and modest",
+            "calm and collected",
+            "loud and boastful",
+            "thoughtful and insightful"
+          ],
+          "correctAnswer": "loud and boastful"
+        },
+        {
+          "question": "Despite their **divergent** views, the two scientists managed to collaborate on a groundbreaking project.",
+          "options": [
+            "similar",
+            "contrasting",
+            "compatible",
+            "harmonious"
+          ],
+          "correctAnswer": "contrasting"
+        },
+        {
+          "question": "The artist's **ephemeral** sculptures were made from materials that would eventually decompose.",
+          "options": [
+            "permanent",
+            "temporary",
+            "massive",
+            "detailed"
+          ],
+          "correctAnswer": "temporary"
+        },
+        {
+          "question": "The **labyrinthine** corridors of the old castle were confusing and easy to get lost in.",
+          "options": [
+            "straight and simple",
+            "wide and spacious",
+            "winding and complex",
+            "dark and gloomy"
+          ],
+          "correctAnswer": "winding and complex"
         }
       ]
     },
@@ -2976,6 +3026,781 @@
             "Akbar"
           ],
           "correctAnswer": "Muhammad Shah"
+        }
+      ]
+    },
+    {
+      "title": "Television",
+      "questions": [
+        {
+          "question": "What is the name of the first commercially available television system?",
+          "options": [
+            "RCA",
+            "Sony",
+            "Philips",
+            "Telefunken"
+          ],
+          "correctAnswer": "RCA"
+        },
+        {
+          "question": "Who invented the first practical television system?",
+          "options": [
+            "Nikola Tesla",
+            "Philo Farnsworth",
+            "Vladimir Zworykin",
+            "John Logie Baird"
+          ],
+          "correctAnswer": "Philo Farnsworth"
+        },
+        {
+          "question": "What year was the first public television broadcast?",
+          "options": [
+            "1927",
+            "1936",
+            "1941",
+            "1951"
+          ],
+          "correctAnswer": "1927"
+        },
+        {
+          "question": "What does the acronym 'TV' stand for?",
+          "options": [
+            "Tele-Vision",
+            "Tele-View",
+            "Television",
+            "Tele-Visual"
+          ],
+          "correctAnswer": "Television"
+        },
+        {
+          "question": "Which company developed the first color television system?",
+          "options": [
+            "RCA",
+            "Sony",
+            "Philips",
+            "CBS"
+          ],
+          "correctAnswer": "RCA"
+        },
+        {
+          "question": "What is the name of the first television satellite?",
+          "options": [
+            "Telstar",
+            "Echo",
+            "Syncom",
+            "Early Bird"
+          ],
+          "correctAnswer": "Telstar"
+        },
+        {
+          "question": "What is the name of the first commercially available home video recorder?",
+          "options": [
+            "VCR",
+            "Betamax",
+            "VHS",
+            "Video 2000"
+          ],
+          "correctAnswer": "VCR"
+        },
+        {
+          "question": "Which company developed the first digital television standard?",
+          "options": [
+            "RCA",
+            "Sony",
+            "Philips",
+            "Mitsubishi"
+          ],
+          "correctAnswer": "Sony"
+        },
+        {
+          "question": "What is the name of the first digital television channel?",
+          "options": [
+            "HBO",
+            "CNN",
+            "Disney Channel",
+            "Nickelodeon"
+          ],
+          "correctAnswer": "HBO"
+        },
+        {
+          "question": "Which country has the highest number of television channels?",
+          "options": [
+            "United States",
+            "China",
+            "India",
+            "Japan"
+          ],
+          "correctAnswer": "China"
+        },
+        {
+          "question": "What is the name of the most popular television show of all time?",
+          "options": [
+            "Friends",
+            "Seinfeld",
+            "The Simpsons",
+            "Game of Thrones"
+          ],
+          "correctAnswer": "Friends"
+        },
+        {
+          "question": "What is the name of the most expensive television show ever produced?",
+          "options": [
+            "Game of Thrones",
+            "The Crown",
+            "Stranger Things",
+            "House of Cards"
+          ],
+          "correctAnswer": "Game of Thrones"
+        },
+        {
+          "question": "What is the name of the first streaming television service?",
+          "options": [
+            "Netflix",
+            "Amazon Prime Video",
+            "Hulu",
+            "Apple TV+"
+          ],
+          "correctAnswer": "Netflix"
+        },
+        {
+          "question": "What is the name of the most popular streaming television service?",
+          "options": [
+            "Netflix",
+            "Amazon Prime Video",
+            "Disney+",
+            "HBO Max"
+          ],
+          "correctAnswer": "Netflix"
+        },
+        {
+          "question": "What is the name of the first television remote control?",
+          "options": [
+            "Zenith Flashmatic",
+            "Channelmatic",
+            "Space Command",
+            "Clicker"
+          ],
+          "correctAnswer": "Zenith Flashmatic"
+        },
+        {
+          "question": "What is the name of the first television network in the United States?",
+          "options": [
+            "NBC",
+            "CBS",
+            "ABC",
+            "PBS"
+          ],
+          "correctAnswer": "NBC"
+        },
+        {
+          "question": "What is the name of the first television program to be broadcast in color?",
+          "options": [
+            "The Ed Sullivan Show",
+            "I Love Lucy",
+            "The Tonight Show Starring Johnny Carson",
+            "The Wizard of Oz"
+          ],
+          "correctAnswer": "The Ed Sullivan Show"
+        },
+        {
+          "question": "What is the name of the first television commercial?",
+          "options": [
+            "Bulova Watch",
+            "Pepsi Cola",
+            "Kellogg's Corn Flakes",
+            "Chevrolet"
+          ],
+          "correctAnswer": "Bulova Watch"
+        },
+        {
+          "question": "What is the name of the first television show to feature a laugh track?",
+          "options": [
+            "I Love Lucy",
+            "The Honeymooners",
+            "The Dick Van Dyke Show",
+            "The Andy Griffith Show"
+          ],
+          "correctAnswer": "I Love Lucy"
+        },
+        {
+          "question": "What is the name of the first television show to be broadcast in 3D?",
+          "options": [
+            "The Twilight Zone",
+            "Alfred Hitchcock Presents",
+            "The Outer Limits",
+            "The Jetsons"
+          ],
+          "correctAnswer": "The Twilight Zone"
+        },
+        {
+          "question": "What year did the first public television broadcast take place?",
+          "options": [
+            "1927",
+            "1936",
+            "1941",
+            "1953"
+          ],
+          "correctAnswer": "1936"
+        },
+        {
+          "question": "What is the name of the first commercial television network in the United States?",
+          "options": [
+            "ABC",
+            "CBS",
+            "NBC",
+            "PBS"
+          ],
+          "correctAnswer": "NBC"
+        },
+        {
+          "question": "Who invented the cathode ray tube, a key component of early television sets?",
+          "options": [
+            "Thomas Edison",
+            "Nikola Tesla",
+            "Karl Ferdinand Braun",
+            "Albert Einstein"
+          ],
+          "correctAnswer": "Karl Ferdinand Braun"
+        },
+        {
+          "question": "What is the name of the first color television system to gain widespread adoption?",
+          "options": [
+            "NTSC",
+            "PAL",
+            "SECAM",
+            "HDTV"
+          ],
+          "correctAnswer": "NTSC"
+        },
+        {
+          "question": "Which of these is NOT a type of television programming?",
+          "options": [
+            "Reality TV",
+            "News",
+            "Comedy",
+            "Literature"
+          ],
+          "correctAnswer": "Literature"
+        },
+        {
+          "question": "What is the name of the first satellite television channel?",
+          "options": [
+            "HBO",
+            "CNN",
+            "MTV",
+            "The Discovery Channel"
+          ],
+          "correctAnswer": "HBO"
+        },
+        {
+          "question": "What is the name of the first reality television show?",
+          "options": [
+            "Survivor",
+            "The Real World",
+            "American Idol",
+            "Candid Camera"
+          ],
+          "correctAnswer": "Candid Camera"
+        },
+        {
+          "question": "Who is the host of the popular television show 'Jeopardy!'?",
+          "options": [
+            "Alex Trebek",
+            "Pat Sajak",
+            "Drew Carey",
+            "Ryan Seacrest"
+          ],
+          "correctAnswer": "Alex Trebek"
+        },
+        {
+          "question": "What is the name of the first television series to be broadcast in high definition?",
+          "options": [
+            "Friends",
+            "Seinfeld",
+            "ER",
+            "The Sopranos"
+          ],
+          "correctAnswer": "The Sopranos"
+        },
+        {
+          "question": "What is the name of the first streaming service to offer on-demand television shows?",
+          "options": [
+            "Netflix",
+            "Hulu",
+            "Amazon Prime Video",
+            "YouTube"
+          ],
+          "correctAnswer": "Netflix"
+        },
+        {
+          "question": "Which of these is NOT a type of television remote control?",
+          "options": [
+            "Clicker",
+            "Zapper",
+            "Flipper",
+            "Computer"
+          ],
+          "correctAnswer": "Computer"
+        },
+        {
+          "question": "What is the name of the award given to the best television shows?",
+          "options": [
+            "Academy Awards",
+            "Golden Globes",
+            "Emmy Awards",
+            "Grammy Awards"
+          ],
+          "correctAnswer": "Emmy Awards"
+        },
+        {
+          "question": "What is the name of the iconic sitcom that ran for ten seasons and featured six friends living in New York City?",
+          "options": [
+            "Seinfeld",
+            "Friends",
+            "Frasier",
+            "The Big Bang Theory"
+          ],
+          "correctAnswer": "Friends"
+        },
+        {
+          "question": "Which of these is a popular streaming service that offers original television shows and movies?",
+          "options": [
+            "Spotify",
+            "Pandora",
+            "Apple Music",
+            "Disney+"
+          ],
+          "correctAnswer": "Disney+"
+        },
+        {
+          "question": "What is the name of the first television set with a flat screen?",
+          "options": [
+            "Sony Trinitron",
+            "RCA Victor",
+            "Zenith",
+            "Panasonic"
+          ],
+          "correctAnswer": "Sony Trinitron"
+        },
+        {
+          "question": "Which of these is NOT a type of television programming?",
+          "options": [
+            "Sports",
+            "Music",
+            "Documentary",
+            "Literature"
+          ],
+          "correctAnswer": "Literature"
+        },
+        {
+          "question": "What is the name of the first cable television channel launched in the United States?",
+          "options": [
+            "HBO",
+            "CNN",
+            "MTV",
+            "ESPN"
+          ],
+          "correctAnswer": "HBO"
+        },
+        {
+          "question": "What is the name of the popular television game show that features contestants answering trivia questions for a chance to win money and prizes?",
+          "options": [
+            "Wheel of Fortune",
+            "Jeopardy!",
+            "Family Feud",
+            "Who Wants to Be a Millionaire?"
+          ],
+          "correctAnswer": "Jeopardy!"
+        },
+        {
+          "question": "Which of these is a popular streaming service that offers original television shows and movies?",
+          "options": [
+            "Spotify",
+            "Pandora",
+            "Apple Music",
+            "Netflix"
+          ],
+          "correctAnswer": "Netflix"
+        },
+        {
+          "question": "What is the name of the first television series to feature a black family as the main characters?",
+          "options": [
+            "I Spy",
+            "The Jeffersons",
+            "The Cosby Show",
+            "The Fresh Prince of Bel-Air"
+          ],
+          "correctAnswer": "I Spy"
+        }
+      ]
+    },
+    {
+      "title": "Environment Pollution",
+      "questions": [
+        {
+          "question": "What is the primary cause of air pollution in urban areas?",
+          "options": [
+            "Volcanic eruptions",
+            "Forest fires",
+            "Industrial emissions and vehicle exhaust",
+            "Natural dust storms"
+          ],
+          "correctAnswer": "Industrial emissions and vehicle exhaust"
+        },
+        {
+          "question": "Which of the following is NOT a major type of environmental pollution?",
+          "options": [
+            "Air pollution",
+            "Water pollution",
+            "Soil pollution",
+            "Noise pollution"
+          ],
+          "correctAnswer": "Noise pollution"
+        },
+        {
+          "question": "What is the main source of water pollution in developing countries?",
+          "options": [
+            "Agricultural runoff",
+            "Industrial waste",
+            "Sewage discharge",
+            "Oil spills"
+          ],
+          "correctAnswer": "Sewage discharge"
+        },
+        {
+          "question": "Which of the following gases is a major contributor to the greenhouse effect?",
+          "options": [
+            "Oxygen",
+            "Nitrogen",
+            "Carbon dioxide",
+            "Hydrogen"
+          ],
+          "correctAnswer": "Carbon dioxide"
+        },
+        {
+          "question": "What is the process called when harmful substances accumulate in living organisms as they move up the food chain?",
+          "options": [
+            "Bioaccumulation",
+            "Biomagnification",
+            "Bioremediation",
+            "Biodegradation"
+          ],
+          "correctAnswer": "Biomagnification"
+        },
+        {
+          "question": "What is the main cause of acid rain?",
+          "options": [
+            "Volcanic eruptions",
+            "Burning of fossil fuels",
+            "Natural weathering of rocks",
+            "Deforestation"
+          ],
+          "correctAnswer": "Burning of fossil fuels"
+        },
+        {
+          "question": "Which of the following is a major consequence of plastic pollution in the ocean?",
+          "options": [
+            "Increased fish populations",
+            "Improved water quality",
+            "Entanglement and ingestion by marine animals",
+            "Reduced greenhouse gas emissions"
+          ],
+          "correctAnswer": "Entanglement and ingestion by marine animals"
+        },
+        {
+          "question": "What is the term for the process of cleaning up contaminated environments?",
+          "options": [
+            "Bioaccumulation",
+            "Bioremediation",
+            "Biomagnification",
+            "Biodegradation"
+          ],
+          "correctAnswer": "Bioremediation"
+        },
+        {
+          "question": "Which of the following is a common strategy for reducing air pollution from vehicles?",
+          "options": [
+            "Increasing vehicle speed limits",
+            "Using leaded gasoline",
+            "Promoting electric vehicles",
+            "Reducing vehicle maintenance"
+          ],
+          "correctAnswer": "Promoting electric vehicles"
+        },
+        {
+          "question": "What is the primary goal of environmental regulations?",
+          "options": [
+            "Boosting economic growth",
+            "Protecting public health and the environment",
+            "Creating new jobs",
+            "Reducing government spending"
+          ],
+          "correctAnswer": "Protecting public health and the environment"
+        }
+      ]
+    },
+    {
+      "title": "Generation Z",
+      "questions": [
+        {
+          "question": "What is the most common label used to describe individuals born between the mid-1990s and the early 2010s?",
+          "options": [
+            "Millennials",
+            "Gen X",
+            "Baby Boomers",
+            "Generation Z"
+          ],
+          "correctAnswer": "Generation Z"
+        },
+        {
+          "question": "Which of these is NOT a defining characteristic of Generation Z?",
+          "options": [
+            "Digital natives",
+            "Highly diverse",
+            "Strong sense of social responsibility",
+            "Prefer traditional communication methods"
+          ],
+          "correctAnswer": "Prefer traditional communication methods"
+        },
+        {
+          "question": "Which of these events significantly shaped the worldview of Generation Z?",
+          "options": [
+            "The Cold War",
+            "The Vietnam War",
+            "The Great Recession",
+            "The Civil Rights Movement"
+          ],
+          "correctAnswer": "The Great Recession"
+        },
+        {
+          "question": "What is a significant trend in Generation Z's relationship with social media?",
+          "options": [
+            "Avoidance of social media platforms",
+            "Increased use of social media for activism",
+            "Decreased interest in social media compared to previous generations",
+            "Preference for traditional forms of communication over social media"
+          ],
+          "correctAnswer": "Increased use of social media for activism"
+        },
+        {
+          "question": "What is a major concern for Generation Z in terms of the future?",
+          "options": [
+            "The decline of the nuclear family",
+            "The increasing cost of education",
+            "The rise of artificial intelligence",
+            "The lack of job opportunities"
+          ],
+          "correctAnswer": "The rise of artificial intelligence"
+        }
+      ]
+    },
+    {
+      "title": "RAM",
+      "questions": [
+        {
+          "question": "What does RAM stand for?",
+          "options": [
+            "Random Access Memory",
+            "Read Access Memory",
+            "Rapid Access Memory",
+            "Real Access Memory"
+          ],
+          "correctAnswer": "Random Access Memory"
+        },
+        {
+          "question": "What is the primary function of RAM?",
+          "options": [
+            "Storing the operating system",
+            "Permanently storing data",
+            "Processing instructions",
+            "Providing long-term storage"
+          ],
+          "correctAnswer": "Storing the operating system"
+        },
+        {
+          "question": "Which of the following is NOT a type of RAM?",
+          "options": [
+            "DDR4",
+            "SRAM",
+            "ROM",
+            "SDRAM"
+          ],
+          "correctAnswer": "ROM"
+        },
+        {
+          "question": "How does RAM differ from storage devices like hard drives?",
+          "options": [
+            "RAM is faster and more volatile",
+            "RAM is slower and more permanent",
+            "RAM is only used for audio files, while hard drives are for other files",
+            "RAM is used for processing, while hard drives are for storing files"
+          ],
+          "correctAnswer": "RAM is faster and more volatile"
+        },
+        {
+          "question": "What happens to data stored in RAM when a computer is turned off?",
+          "options": [
+            "It is saved permanently",
+            "It is transferred to the hard drive",
+            "It is lost",
+            "It is compressed and stored"
+          ],
+          "correctAnswer": "It is lost"
+        },
+        {
+          "question": "What does RAM stand for?",
+          "options": [
+            "Random Access Memory",
+            "Read Access Memory",
+            "Rapid Access Memory",
+            "Real Access Memory"
+          ],
+          "correctAnswer": "Random Access Memory"
+        },
+        {
+          "question": "What is the primary function of RAM?",
+          "options": [
+            "Storing the operating system",
+            "Permanently storing data",
+            "Processing instructions",
+            "Providing long-term storage"
+          ],
+          "correctAnswer": "Storing the operating system"
+        },
+        {
+          "question": "Which of the following is NOT a type of RAM?",
+          "options": [
+            "DDR4",
+            "SRAM",
+            "ROM",
+            "SDRAM"
+          ],
+          "correctAnswer": "ROM"
+        },
+        {
+          "question": "How does RAM differ from storage devices like hard drives?",
+          "options": [
+            "RAM is faster and more volatile",
+            "RAM is slower and more permanent",
+            "RAM is only used for audio files, while hard drives are for other files",
+            "RAM is used for processing, while hard drives are for storing files"
+          ],
+          "correctAnswer": "RAM is faster and more volatile"
+        },
+        {
+          "question": "What happens to data stored in RAM when a computer is turned off?",
+          "options": [
+            "It is saved permanently",
+            "It is transferred to the hard drive",
+            "It is lost",
+            "It is compressed and stored"
+          ],
+          "correctAnswer": "It is lost"
+        }
+      ]
+    },
+    {
+      "title": "ROM",
+      "questions": [
+        {
+          "question": "What does ROM stand for?",
+          "options": [
+            "Random Only Memory",
+            "Read Only Memory",
+            "Rewritable Output Memory",
+            "Removable Output Memory"
+          ],
+          "correctAnswer": "Read Only Memory"
+        },
+        {
+          "question": "Which of the following is a characteristic of ROM?",
+          "options": [
+            "Data can be easily modified",
+            "Data is volatile and lost when power is off",
+            "Data is permanent and cannot be changed",
+            "Data can be written to multiple times"
+          ],
+          "correctAnswer": "Data is permanent and cannot be changed"
+        },
+        {
+          "question": "What is the primary purpose of ROM in a computer system?",
+          "options": [
+            "Storing temporary files",
+            "Storing the operating system and boot programs",
+            "Storing user data and applications",
+            "Managing the computer's hardware"
+          ],
+          "correctAnswer": "Storing the operating system and boot programs"
+        },
+        {
+          "question": "Which of the following is an example of ROM?",
+          "options": [
+            "Hard drive",
+            "RAM",
+            "Flash drive",
+            "BIOS chip"
+          ],
+          "correctAnswer": "BIOS chip"
+        },
+        {
+          "question": "What is the difference between ROM and PROM?",
+          "options": [
+            "PROM can be written to only once, while ROM can be written to multiple times",
+            "ROM can be written to only once, while PROM can be written to multiple times",
+            "PROM is faster than ROM",
+            "ROM is faster than PROM"
+          ],
+          "correctAnswer": "PROM can be written to only once, while ROM can be written to multiple times"
+        },
+        {
+          "question": "What does ROM stand for?",
+          "options": [
+            "Random Only Memory",
+            "Read Only Memory",
+            "Rewritable Output Memory",
+            "Removable Output Memory"
+          ],
+          "correctAnswer": "Read Only Memory"
+        },
+        {
+          "question": "Which of the following is a characteristic of ROM?",
+          "options": [
+            "Data can be easily modified",
+            "Data is volatile and lost when power is off",
+            "Data is permanent and cannot be changed",
+            "Data can be written to multiple times"
+          ],
+          "correctAnswer": "Data is permanent and cannot be changed"
+        },
+        {
+          "question": "What is the primary purpose of ROM in a computer system?",
+          "options": [
+            "Storing temporary files",
+            "Storing the operating system and boot programs",
+            "Storing user data and applications",
+            "Managing the computer's hardware"
+          ],
+          "correctAnswer": "Storing the operating system and boot programs"
+        },
+        {
+          "question": "Which of the following is an example of ROM?",
+          "options": [
+            "Hard drive",
+            "RAM",
+            "Flash drive",
+            "BIOS chip"
+          ],
+          "correctAnswer": "BIOS chip"
+        },
+        {
+          "question": "What is the difference between ROM and PROM?",
+          "options": [
+            "PROM can be written to only once, while ROM can be written to multiple times",
+            "ROM can be written to only once, while PROM can be written to multiple times",
+            "PROM is faster than ROM",
+            "ROM is faster than PROM"
+          ],
+          "correctAnswer": "PROM can be written to only once, while ROM can be written to multiple times"
         }
       ]
     }

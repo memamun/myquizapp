@@ -142,16 +142,17 @@ function AdminDashboard() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ topic: aiTopic, numberOfQuestions: aiQuestionCount }),
           });
+          const data = await response.json();
           if (response.ok) {
-            const data = await response.json();
             questionData = data.questions;
             quizTitle = aiTopic;
+            showTooltip('Questions generated successfully');
           } else {
-            alert('Failed to generate questions');
-            return;
+            throw new Error(data.message || 'Failed to generate questions');
           }
         } catch (error) {
           console.error('Error generating questions:', error);
+          showTooltip('Failed to generate questions: ' + error.message, 'error');
           return;
         }
         break;
@@ -172,8 +173,11 @@ function AdminDashboard() {
         }
 
         await fetchQuizzes();
-        const updatedQuiz = quizzes.find(q => q.title === quizTitle);
-        setSelectedQuiz(updatedQuiz);
+        if (selectedQuiz) {
+          const updatedQuiz = quizzes.find(q => q.title === selectedQuiz.title);
+          setSelectedQuiz(updatedQuiz);
+        }
+        setActiveSection('questionHub');
         resetForm();
         showTooltip('Question(s) added successfully');
       } catch (error) {

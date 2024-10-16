@@ -116,10 +116,10 @@ app.post('/api/generate-questions', async (req, res) => {
   const { topic, numberOfQuestions } = req.body;
   try {
     const questions = await addQuestionsToQuiz(topic, numberOfQuestions);
-    res.json({ success: true, message: `Added ${numberOfQuestions} questions to the "${topic}" quiz.`, questions });
+    res.json({ success: true, message: `Added ${questions.length} questions to the "${topic}" quiz.`, questions });
   } catch (error) {
     console.error('Error generating questions:', error);
-    res.status(500).json({ success: false, message: 'Error generating questions' });
+    res.status(500).json({ success: false, message: 'Error generating questions: ' + error.message });
   }
 });
 
@@ -156,6 +156,6 @@ app.get('*', (req, res) => {
 });
 
 const port = process.env.PORT || 3001;
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
 });

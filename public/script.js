@@ -42,6 +42,7 @@ fetch('/quizzes.json')
   });
 
 function createTestButtons() {
+  testButtons.innerHTML = ''; // Clear existing buttons
   quizzes.forEach((quiz, index) => {
     const button = document.createElement('button');
     button.textContent = quiz.title;
@@ -174,3 +175,25 @@ function backToHome() {
 answerSheetBtn.addEventListener('click', showAnswerSheet);
 playAgainBtn.addEventListener('click', resetQuiz);
 backHomeBtn.addEventListener('click', backToHome);
+
+function checkForQuizUpdates() {
+  fetch('/quizzes.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      if (JSON.stringify(quizzes) !== JSON.stringify(data.quizzes)) {
+        quizzes = data.quizzes;
+        createTestButtons();
+      }
+    })
+    .catch(error => {
+      console.error('Error checking for quiz updates:', error);
+    });
+}
+
+// Check for updates every 30 seconds
+setInterval(checkForQuizUpdates, 30000);

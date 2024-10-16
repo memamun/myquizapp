@@ -39,18 +39,22 @@ async function generateQuestions(topic, numberOfQuestions) {
 
 async function addQuestionsToQuiz(topic, numberOfQuestions) {
   const quizzesPath = path.join(__dirname, '..', 'public', 'quizzes.json');
-  const quizzesData = JSON.parse(fs.readFileSync(quizzesPath, 'utf8'));
+  let quizzesData;
+  
+  try {
+    quizzesData = JSON.parse(fs.readFileSync(quizzesPath, 'utf8'));
+  } catch (error) {
+    console.error('Error reading quizzes file:', error);
+    throw new Error('Failed to read quizzes file');
+  }
 
   const newQuestions = await generateQuestions(topic, numberOfQuestions);
 
-  // Check if a quiz with the given topic already exists
   let quiz = quizzesData.quizzes.find(q => q.title.toLowerCase() === topic.toLowerCase());
 
   if (quiz) {
-    // Add new questions to the existing quiz
     quiz.questions = [...quiz.questions, ...newQuestions];
   } else {
-    // Create a new quiz with the generated questions
     quiz = {
       title: topic,
       questions: newQuestions
@@ -58,9 +62,14 @@ async function addQuestionsToQuiz(topic, numberOfQuestions) {
     quizzesData.quizzes.push(quiz);
   }
 
-  // Write the updated data back to the file
-  fs.writeFileSync(quizzesPath, JSON.stringify(quizzesData, null, 2));
-  console.log(`Added ${newQuestions.length} questions to the "${topic}" quiz.`);
+  try {
+    fs.writeFileSync(quizzesPath, JSON.stringify(quizzesData, null, 2));
+    console.log(`Added ${newQuestions.length} questions to the "${topic}" quiz.`);
+    return newQuestions;
+  } catch (error) {
+    console.error('Error writing quizzes file:', error);
+    throw new Error('Failed to write quizzes file');
+  }
 }
 
 module.exports = { addQuestionsToQuiz };
