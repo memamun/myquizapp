@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '..', 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
 
 // ... (keep existing routes)
 
@@ -24,6 +24,11 @@ app.post('/api/generate-questions', async (req, res) => {
 });
 
 // ... (keep existing routes)
+
+// Handle React routing, return all requests to React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
